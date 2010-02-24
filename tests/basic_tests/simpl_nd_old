@@ -1,0 +1,1 @@
+{{{emu_result,[{'EXIT',if_clause},{'EXIT',{case_clause,42}}]},{native_result,[{'EXIT',if_clause},{'EXIT',{case_clause,42}}]}},{{emu_compile,{ok,simpl_nd}},{native_compile,{ok,simpl_nd}}}}

@@ -1,0 +1,3 @@
+
+partialsums:loop/12 :: ((integer(),integer(),float(),float(),float(),float(),float(),float(),float(),float(),float(),float()) -> [float(),...])
+partialsums:main/1 :: ((_) -> any())

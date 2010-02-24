@@ -1,0 +1,8 @@
+{product1,t1,1} : OK
+ typesig:  ((2) -> {2,2})
+ dataflow: ((_) -> {2,_})
+   typean: ((_) -> {2,_})
+{product1,t2,1} : OK
+ typesig:  ((1) -> 1)
+ dataflow: ((_) -> any())
+   typean: ((_) -> any())

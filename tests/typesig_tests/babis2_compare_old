@@ -1,0 +1,32 @@
+{babis2,format_error,1} : OK
+ typesig:  ((_) -> any())
+ dataflow: ((_) -> any())
+   typean: ((_) -> any())
+{babis2,parse,1} : OK
+ typesig:  ((_) -> any())
+ dataflow: ((_) -> any())
+   typean: ((_) -> any())
+{babis2,parse_and_scan,1} : OK
+ typesig:  (({atom() | tuple(),atom(),[any()]}) -> any())
+ dataflow: ((_) -> any())
+   typean: ((_) -> any())
+{babis2,yeccerror,1} : OK
+ typesig:  ((tuple()) -> {'error',[[any()],...]})
+ dataflow: ((tuple()) -> {'error',[[any()],...]})
+   typean: ((_) -> {'error',[any(),...]})
+{babis2,yeccgoto,2} : OK
+ typesig:  ((atom(),byte()) -> 1..255)
+ dataflow: ((atom(),_) -> 1..255)
+   typean: ((atom(),_) -> 1..255)
+{babis2,yeccpars1,5} : OK
+ typesig:  ((maybe_improper_list(),'false' | {atom() | tuple(),atom(),[any()]},byte(),[any()],[[[any(),...] | tuple(),...] | tuple()]) -> any())
+ dataflow: ((_,'false' | {atom() | tuple(),atom(),[any()]},byte(),[any()],[[[any(),...] | tuple(),...] | tuple()]) -> any())
+   typean: ((_,'false' | {_,_,_},byte(),[any()],[any()]) -> any())
+{babis2,yeccpars2,7} : OK
+ typesig:  ((byte(),_,[any()],[[[any(),...] | tuple(),...] | tuple()],tuple(),_,'false' | {atom() | tuple(),atom(),[any()]}) -> any())
+ dataflow: ((byte(),_,[any()],[[[any(),...] | tuple(),...] | tuple()],tuple(),_,'false' | {atom() | tuple(),atom(),[any()]}) -> any())
+   typean: ((byte(),_,[any()],[any()],_,_,'false' | {_,_,_}) -> any())
+{babis2,yecctoken2string,1} : OK
+ typesig:  ((tuple()) -> [any()])
+ dataflow: ((tuple()) -> [any()])
+   typean: ((_) -> any())

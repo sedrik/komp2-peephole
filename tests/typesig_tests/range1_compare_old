@@ -1,0 +1,4 @@
+{range1,l,1} : OK
+ typesig:  (([byte()]) -> 'ok')
+ dataflow: ((_) -> 'ok')
+   typean: ((_) -> 'ok')

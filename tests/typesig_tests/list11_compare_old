@@ -1,0 +1,16 @@
+{list11,highest_label,1} : OK
+ typesig:  (([any()]) -> integer())
+ dataflow: ((_) -> integer())
+   typean: ((_) -> integer())
+{list11,highest_label,2} : OK
+ typesig:  (([any()],'undefined' | integer()) -> integer())
+ dataflow: ((_,'undefined' | integer()) -> integer())
+   typean: ((_,_) -> integer())
+{list11,is_label,1} : OK
+ typesig:  ((_) -> bool())
+ dataflow: ((_) -> bool())
+   typean: ((_) -> bool())
+{list11,label_name,1} : OK
+ typesig:  ((#label{}) -> 'undefined' | integer())
+ dataflow: ((_) -> 'undefined' | integer())
+   typean: ((_) -> any())

@@ -1,0 +1,4 @@
+
+tuple1:t/0 :: (() -> {42})
+tuple1:t/1 :: ((number()) -> {number()})
+tuple1:t_local/1 :: ((1) -> {42})

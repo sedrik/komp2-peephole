@@ -1,0 +1,9 @@
+
+guard2:t1/1 :: ((atom() | [any()]) -> 'ok')
+guard2:t2/1 :: ((_) -> none())
+guard2:t3/1 :: (('foo') -> 'ok')
+guard2:t4/1 :: (('bar' | 'foo') -> 'ok')
+guard2:t5/2 :: (([any()],[any()]) -> 'ok')
+guard2:t6/1 :: (('true') -> 'ok')
+guard2:t7/1 :: (('false') -> 'ok')
+guard2:t8/1 :: ((binary() | tuple()) -> 'ok')

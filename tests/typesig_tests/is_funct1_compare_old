@@ -1,0 +1,16 @@
+{is_funct1,f,1} : OK
+ typesig:  ((fun((_) -> any())) -> 'ok')
+ dataflow: ((_) -> 'ok')
+   typean: ((_) -> 'ok')
+{is_funct1,f1,2} : OK
+ typesig:  ((fun(),1 | 2) -> 'binary' | 'unary')
+ dataflow: ((_,_) -> 'binary' | 'unary')
+   typean: ((_,_) -> 'binary' | 'unary')
+{is_funct1,f2,2} : OK
+ typesig:  ((fun((_,_) -> any()),2) -> 'binary')
+ dataflow: ((_,_) -> 'binary')
+   typean: ((_,_) -> 'binary')
+{is_funct1,f3,1} : OK
+ typesig:  ((fun((_,_,_) -> any())) -> fun((_,_,_) -> any()))
+ dataflow: ((_) -> fun((_,_,_) -> any()))
+   typean: ((_) -> any())

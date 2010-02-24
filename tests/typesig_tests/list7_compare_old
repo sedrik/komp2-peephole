@@ -1,0 +1,4 @@
+{list7,read_entity_body,2} : OK
+ typesig:  ((number(),[any()]) -> {'ok',[any()]})
+ dataflow: ((_,_) -> {'ok',[any()]})
+   typean: ((_,_) -> {'ok',_})

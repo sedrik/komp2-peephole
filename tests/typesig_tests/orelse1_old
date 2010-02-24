@@ -1,0 +1,4 @@
+
+orelse1:zero_one_in_heads/1 :: ((0 | 1) -> 'ok')
+orelse1:zero_one_in_orelse_guard/1 :: ((0 | 1) -> 0 | 1)
+orelse1:zero_one_in_or_guard/1 :: ((0 | 1) -> 0 | 1)

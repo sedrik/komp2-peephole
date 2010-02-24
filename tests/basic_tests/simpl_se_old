@@ -1,0 +1,1 @@
+{{{emu_result,{rec,foo,[a,b,c],42,{a,b},42.0}},{native_result,{rec,foo,[a,b,c],42,{a,b},42.0}}},{{emu_compile,{ok,simpl_se}},{native_compile,{ok,simpl_se}}}}

@@ -1,0 +1,20 @@
+{fun4,init,1} : OK
+ typesig:  ((pid()) -> no_return())
+ dataflow: ((pid()) -> no_return())
+   typean: ((pid()) -> none())
+{fun4,loop,1} : OK
+ typesig:  ((_) -> no_return())
+ dataflow: ((_) -> no_return())
+   typean: ((_) -> none())
+{fun4,reply,2} : OK
+ typesig:  ((atom() | pid() | port() | {atom(),atom()},_) -> {'fun4',_})
+ dataflow: ((_,_) -> {'fun4',_})
+   typean: ((_,_) -> {'fun4',_})
+{fun4,start,0} : OK
+ typesig:  (() -> {'ok',pid()})
+ dataflow: (() -> {'ok',pid()})
+   typean: (() -> {'ok',pid()} | {'tracer','no_tracer'})
+{fun4,start,1} : OK
+ typesig:  (('no_tracer') -> {'ok',pid()})
+ dataflow: (('no_tracer') -> {'ok',pid()})
+   typean: (('no_tracer') -> {'ok',pid()} | {'tracer','no_tracer'})

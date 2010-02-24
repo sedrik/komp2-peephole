@@ -1,0 +1,2 @@
+
+receive1:t/0 :: (() -> 'ok' | {'float',float()} | {'int',integer()})

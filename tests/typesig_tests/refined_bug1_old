@@ -1,0 +1,4 @@
+
+refined_bug1:chars1/3 :: ((integer(),non_neg_integer(),[integer()]) -> [integer()])
+refined_bug1:chars/2 :: ((integer(),non_neg_integer()) -> [integer()])
+refined_bug1:chars/3 :: ((integer(),non_neg_integer(),[]) -> [integer()])

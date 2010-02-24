@@ -1,0 +1,12 @@
+{list5,exported,1} : OK
+ typesig:  ((maybe_improper_list()) -> [integer()])
+ dataflow: ((_) -> [any()])
+   typean: ((_) -> [any()])
+{list5,internal,1} : OK
+ typesig:  ((maybe_improper_list()) -> maybe_improper_list())
+ dataflow: ((_) -> maybe_improper_list())
+   typean: ((_) -> maybe_improper_list())
+{list5,is_even,1} : OK
+ typesig:  ((integer()) -> bool())
+ dataflow: ((_) -> bool())
+   typean: ((_) -> bool())

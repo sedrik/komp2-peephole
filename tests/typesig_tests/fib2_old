@@ -1,0 +1,4 @@
+
+fib2:fib_float/1 :: ((float()) -> pos_integer())
+fib2:fib_int/1 :: ((non_neg_integer()) -> pos_integer())
+fib2:test/0 :: (() -> bool())

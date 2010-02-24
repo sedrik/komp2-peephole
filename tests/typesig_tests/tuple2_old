@@ -1,0 +1,4 @@
+
+tuple2:gazonk/1 :: (({'bar','a' | 'b' | 'baz'} | {'foo','a' | 'b' | 'baz'}) -> 'bar' | 'foo')
+tuple2:t1/1 :: (({'bar','baz'} | {'foo','baz'}) -> 'bar' | 'foo')
+tuple2:t2/1 :: ((1 | 2) -> {'bar',{'bar','a' | 'b'} | {'foo','a' | 'b'}} | {'foo',{'bar','a' | 'b'} | {'foo','a' | 'b'}})

@@ -1,0 +1,4 @@
+{case10,t,2} : OK
+ typesig:  ((1 | 2,1 | 2) -> 'a' | 'b')
+ dataflow: ((_,_) -> 'a' | 'b')
+   typean: ((_,_) -> 'a' | 'b')

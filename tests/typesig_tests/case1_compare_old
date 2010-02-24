@@ -1,0 +1,12 @@
+{case1,t,0} : OK
+ typesig:  (() -> {1,1})
+ dataflow: (() -> {1,1})
+   typean: (() -> 'ok' | 1 | {1,1})
+{case1,t,1} : OK
+ typesig:  ((_) -> 'ok' | 3 | {1,_})
+ dataflow: ((_) -> 'ok' | 3 | {1,_})
+   typean: ((_) -> any())
+{case1,t_local,1} : OK
+ typesig:  ((1) -> {1,1})
+ dataflow: ((1) -> {1,1})
+   typean: ((1) -> 'ok' | 1 | {1,1})

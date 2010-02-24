@@ -1,0 +1,8 @@
+{guard5,is_atom,1} : OK
+ typesig:  ((atom()) -> 'true')
+ dataflow: ((_) -> 'true')
+   typean: ((_) -> bool())
+{guard5,is_bool,1} : OK
+ typesig:  ((_) -> 'false')
+ dataflow: ((_) -> 'false')
+   typean: ((_) -> bool())

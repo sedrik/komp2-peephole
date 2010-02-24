@@ -1,0 +1,9 @@
+
+babis2:format_error/1 :: ((_) -> any())
+babis2:parse/1 :: ((_) -> any())
+babis2:parse_and_scan/1 :: (({atom() | tuple(),atom(),[any()]}) -> any())
+babis2:yeccerror/1 :: ((tuple()) -> {'error',[[any()],...]})
+babis2:yeccgoto/2 :: ((atom(),byte()) -> 1..255)
+babis2:yeccpars1/5 :: ((maybe_improper_list(),'false' | {atom() | tuple(),atom(),[any()]},byte(),[any()],[[[any(),...] | tuple(),...] | tuple()]) -> any())
+babis2:yeccpars2/7 :: ((byte(),_,[any()],[[[any(),...] | tuple(),...] | tuple()],tuple(),_,'false' | {atom() | tuple(),atom(),[any()]}) -> any())
+babis2:yecctoken2string/1 :: ((tuple()) -> [any()])

@@ -1,0 +1,2 @@
+
+byte1:is_byte/1 :: ((byte()) -> 'true')

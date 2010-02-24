@@ -1,0 +1,5 @@
+
+mfalist:get_fun_mfas/1 :: (([any()]) -> [{atom(),atom(),integer()}])
+mfalist:mfa/2 :: (([any()],{atom(),atom(),integer()}) -> [{{_,_,_},_}])
+mfalist:mfa_get/4 :: ((atom(),atom(),integer(),[any()]) -> {_,[{atom(),atom(),integer()}]})
+mfalist:mfa_loop/4 :: (([{atom(),atom(),integer()}],[{{_,_,_},_}],{'sets',number(),_,pos_integer(),_,_,_,_,tuple()},[any()]) -> [{{_,_,_},_}])

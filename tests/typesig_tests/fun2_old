@@ -1,0 +1,4 @@
+
+fun2:mk_reader/2 :: ((_,_) -> fun(() -> maybe_improper_list(any(),fun(() -> maybe_improper_list(any(),fun(() -> any()) | [])) | [])))
+fun2:read_term/2 :: ((fun((_,_) -> any()),_) -> 'eof' | {'ok',_})
+fun2:read_term/3 :: ((fun((_,_) -> any()),_,<<_:40>>) -> {'ok',_})

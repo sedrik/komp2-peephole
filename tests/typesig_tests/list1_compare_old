@@ -1,0 +1,28 @@
+{list1,append,2} : OK
+ typesig:  (([any()],_) -> any())
+ dataflow: ((_,_) -> any())
+   typean: ((_,_) -> any())
+{list1,doit,0} : OK
+ typesig:  (() -> {non_neg_integer()})
+ dataflow: (() -> {non_neg_integer()})
+   typean: (() -> {non_neg_integer()})
+{list1,len,2} : OK
+ typesig:  (([1 | 2 | 3],non_neg_integer()) -> non_neg_integer())
+ dataflow: (([1 | 2 | 3],non_neg_integer()) -> non_neg_integer())
+   typean: (([1 | 2 | 3],non_neg_integer()) -> non_neg_integer())
+{list1,lists__reverse,1} : OK
+ typesig:  (([any()]) -> [any()])
+ dataflow: ((_) -> [any()])
+   typean: ((_) -> [any()])
+{list1,reverse,1} : OK
+ typesig:  (([any()]) -> [any()])
+ dataflow: ((_) -> [any()])
+   typean: ((_) -> [any()])
+{list1,reverse_acc,1} : OK
+ typesig:  (([any()]) -> [any()])
+ dataflow: ((_) -> [any()])
+   typean: ((_) -> [any()])
+{list1,reverse_acc,2} : OK
+ typesig:  (([any()],[any()]) -> [any()])
+ dataflow: ((_,[any()]) -> [any()])
+   typean: ((_,[any()]) -> [any()])

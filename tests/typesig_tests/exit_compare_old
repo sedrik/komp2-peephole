@@ -1,0 +1,8 @@
+{exit,t1,0} : OK
+ typesig:  (() -> none())
+ dataflow: (() -> none())
+   typean: (() -> none())
+{exit,t2,1} : OK
+ typesig:  ((pid() | port()) -> 'true')
+ dataflow: ((_) -> 'true')
+   typean: ((_) -> 'true')

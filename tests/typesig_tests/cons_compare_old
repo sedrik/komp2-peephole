@@ -1,0 +1,8 @@
+{cons,t,0} : OK
+ typesig:  (() -> [1,...])
+ dataflow: (() -> [1,...])
+   typean: (() -> [1,...])
+{cons,t,1} : OK
+ typesig:  ((1) -> [1,...])
+ dataflow: ((1) -> [1,...])
+   typean: ((1) -> [1,...])

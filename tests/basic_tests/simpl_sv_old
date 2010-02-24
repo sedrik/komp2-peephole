@@ -1,0 +1,1 @@
+{{{emu_result,{'A','B','C',foo}},{native_result,{'A','B','C',foo}}},{{emu_compile,{ok,simpl_sv}},{native_compile,{ok,simpl_sv}}}}

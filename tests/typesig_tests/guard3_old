@@ -1,0 +1,5 @@
+
+guard3:t1/1 :: ((number()) -> 'ok')
+guard3:t2/1 :: ((1) -> 'ok')
+guard3:t3/1 :: (('foo') -> 'ok')
+guard3:t4/1 :: (('foo') -> 'ok')

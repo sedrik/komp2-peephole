@@ -1,0 +1,1 @@
+{{{emu_result,[{'EXIT',bar},ok,{'EXIT',bar},{ok,{'EXIT',bar}},badarith,3,{'EXIT',bar},{'EXIT',bar},{no_exception,ok}]},{native_result,[{'EXIT',bar},ok,{'EXIT',bar},{ok,{'EXIT',bar}},badarith,3,{'EXIT',bar},{'EXIT',bar},{no_exception,ok}]}},{{emu_compile,{ok,catches}},{native_compile,{ok,catches}}}}

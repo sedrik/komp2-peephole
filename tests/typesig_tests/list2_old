@@ -1,0 +1,6 @@
+
+list2:l_atom/0 :: (() -> none())
+list2:l_atom/1 :: (([atom(),...]) -> 'ok')
+list2:l_one/0 :: (() -> none())
+list2:l_one/1 :: (([1,...]) -> 'ok')
+list2:test/0 :: (() -> none())

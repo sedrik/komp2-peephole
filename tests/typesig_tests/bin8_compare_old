@@ -1,0 +1,8 @@
+{bin8,match1,1} : OK
+ typesig:  ((<<_:24>>) -> 'ok')
+ dataflow: ((<<_:24>>) -> 'ok')
+   typean: ((<<_:24>>) -> 'error' | 'ok')
+{bin8,t1,0} : OK
+ typesig:  (() -> 'ok')
+ dataflow: (() -> 'ok')
+   typean: (() -> 'error' | 'ok')

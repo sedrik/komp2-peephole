@@ -1,0 +1,2 @@
+
+case3:t/2 :: ((1 | 2,string() | number()) -> atom() | number())

@@ -1,0 +1,8 @@
+{case8,t,1} : OK
+ typesig:  ((integer()) -> 'ok')
+ dataflow: ((_) -> 'ok')
+   typean: ((_) -> 'error' | 'ok')
+{case8,t2,0} : OK
+ typesig:  (() -> float())
+ dataflow: (() -> float())
+   typean: (() -> float())

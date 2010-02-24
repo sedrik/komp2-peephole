@@ -1,0 +1,12 @@
+
+lzip1:unzip1_error/0 :: (() -> none())
+lzip1:unzip1_known_types/0 :: (() -> {[1 | 2],['a' | 'b']})
+lzip1:unzip1_nil/0 :: (() -> {[],[]})
+lzip1:unzip1_unknown_types/1 :: (([{_,_}]) -> {[any()],[any()]})
+lzip1:unzip3_known_types/0 :: (() -> {['a'],['b'],['c']})
+lzip1:zip2/0 :: (() -> [{1 | 2,'a' | 'b'}])
+lzip1:zip3/0 :: (() -> [{1 | 2,'a' | 'b',float()}])
+lzip1:zipwith3/0 :: (() -> [{_,_}])
+lzip1:zipwith3_nil/0 :: (() -> [{_,_}])
+lzip1:zipwith4/0 :: (() -> [{_,'gazonk',_}])
+lzip1:zipwith4_nil/0 :: (() -> [{_,'gazonk',_}])

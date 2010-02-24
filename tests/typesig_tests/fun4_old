@@ -1,0 +1,6 @@
+
+fun4:init/1 :: ((pid()) -> no_return())
+fun4:loop/1 :: ((_) -> no_return())
+fun4:reply/2 :: ((atom() | pid() | port() | {atom(),atom()},_) -> {'fun4',_})
+fun4:start/0 :: (() -> {'ok',pid()})
+fun4:start/1 :: (('no_tracer') -> {'ok',pid()})

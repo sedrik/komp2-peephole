@@ -1,0 +1,12 @@
+{bin2,f,1} : OK
+ typesig:  ((number()) -> number())
+ dataflow: ((_) -> number())
+   typean: ((_) -> number())
+{bin2,i,1} : OK
+ typesig:  ((number()) -> number())
+ dataflow: ((_) -> number())
+   typean: ((_) -> number())
+{bin2,t,3} : differ!!!
+ typesig:  ((non_neg_integer(),number(),number()) -> <<_:8,_:_*1>>)
+ dataflow: ((_,_,_) -> <<_:8,_:_*1>>)
+   typean: ((_,_,_) -> binary())

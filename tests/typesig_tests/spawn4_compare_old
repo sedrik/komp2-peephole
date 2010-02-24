@@ -1,0 +1,4 @@
+{spawn4,spawn,4} : OK
+ typesig:  ((atom(),atom(),atom(),[any()]) -> pid())
+ dataflow: ((_,_,_,_) -> pid())
+   typean: ((_,_,_,_) -> pid())

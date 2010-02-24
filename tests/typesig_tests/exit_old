@@ -1,0 +1,3 @@
+
+exit:t1/0 :: (() -> none())
+exit:t2/1 :: ((pid() | port()) -> 'true')

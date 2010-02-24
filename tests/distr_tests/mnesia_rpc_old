@@ -1,0 +1,1 @@
+{{{emu_result,pong},{native_result,pong}},{{emu_compile,{ok,mnesia_rpc}},{native_compile,{ok,mnesia_rpc}}}}

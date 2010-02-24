@@ -1,0 +1,92 @@
+{babis1,tSO_Int,4} : OK
+ typesig:  ((_,nonempty_maybe_improper_list(),_,_) -> 'false' | {'INT',number(),[any(),...]})
+ dataflow: ((_,_,_,_) -> 'false' | {'INT',number(),[any(),...]})
+   typean: ((_,_,_,_) -> 'false' | {'INT',number(),[any(),...]})
+{babis1,tSO_ObjectStream,4} : OK
+ typesig:  ((_,nonempty_maybe_improper_list(),_,_) -> 'false' | {'OBJECT_STREAM',number(),_})
+ dataflow: ((_,_,_,_) -> 'false' | {'OBJECT_STREAM',number(),_})
+   typean: ((_,_,_,_) -> 'false' | {'OBJECT_STREAM',number(),_})
+{babis1,tSO_Utf,4} : OK
+ typesig:  ((_,nonempty_maybe_improper_list(),_,_) -> 'false' | {'UTF',number(),[any(),...]})
+ dataflow: ((_,_,_,_) -> 'false' | {'UTF',number(),[any(),...]})
+   typean: ((_,_,_,_) -> 'false' | {'UTF',number(),[any(),...]})
+{babis1,tWI_PingAck,4} : OK
+ typesig:  ((_,nonempty_maybe_improper_list(),_,_) -> 'false' | {'PING_ACK',number()})
+ dataflow: ((_,_,_,_) -> 'false' | {'PING_ACK',number()})
+   typean: ((_,_,_,_) -> 'false' | {'PING_ACK',number()})
+{babis1,tWI_ProtNotSupported,4} : OK
+ typesig:  ((_,nonempty_maybe_improper_list(),_,_) -> 'false' | {'PROT_NOT_SUPPORTED',number()})
+ dataflow: ((_,_,_,_) -> 'false' | {'PROT_NOT_SUPPORTED',number()})
+   typean: ((_,_,_,_) -> 'false' | {'PROT_NOT_SUPPORTED',number()})
+{babis1,tWI_ProtocolAck,4} : OK
+ typesig:  ((_,nonempty_maybe_improper_list(),_,_) -> 'false' | {'PROTOCOL_ACK',number()})
+ dataflow: ((_,_,_,_) -> 'false' | {'PROTOCOL_ACK',number()})
+   typean: ((_,_,_,_) -> 'false' | {'PROTOCOL_ACK',number()})
+{babis1,tWI_ReturnData,4} : OK
+ typesig:  ((_,nonempty_maybe_improper_list(),_,_) -> 'false' | {'RETURN_DATA',number()})
+ dataflow: ((_,_,_,_) -> 'false' | {'RETURN_DATA',number()})
+   typean: ((_,_,_,_) -> 'false' | {'RETURN_DATA',number()})
+{babis1,tWI_ReturnValue,4} : OK
+ typesig:  ((_,nonempty_maybe_improper_list(),_,_) -> 'false' | {'RETURN_EXCEPTION',number()} | {'RETURN_VALUE',number()})
+ dataflow: ((_,_,_,_) -> 'false' | {'RETURN_EXCEPTION',number()} | {'RETURN_VALUE',number()})
+   typean: ((_,_,_,_) -> 'false' | {'RETURN_EXCEPTION',number()} | {'RETURN_VALUE',number()})
+{babis1,tWO_Call,4} : OK
+ typesig:  ((_,nonempty_maybe_improper_list(),_,_) -> 'false' | {'CALL',number()})
+ dataflow: ((_,_,_,_) -> 'false' | {'CALL',number()})
+   typean: ((_,_,_,_) -> 'false' | {'CALL',number()})
+{babis1,tWO_DgcAck,4} : OK
+ typesig:  ((_,nonempty_maybe_improper_list(),_,_) -> 'false' | {'DGC_ACK',number()})
+ dataflow: ((_,_,_,_) -> 'false' | {'DGC_ACK',number()})
+   typean: ((_,_,_,_) -> 'false' | {'DGC_ACK',number()})
+{babis1,tWO_Hash,4} : OK
+ typesig:  ((_,nonempty_maybe_improper_list(),_,_) -> 'false' | {'HASH',number(),[any(),...]})
+ dataflow: ((_,_,_,_) -> 'false' | {'HASH',number(),[any(),...]})
+   typean: ((_,_,_,_) -> 'false' | {'HASH',number(),[any(),...]})
+{babis1,tWO_Header,4} : OK
+ typesig:  ((_,nonempty_maybe_improper_list(),_,_) -> 'false' | {'HEADER',number()})
+ dataflow: ((_,_,_,_) -> 'false' | {'HEADER',number()})
+   typean: ((_,_,_,_) -> 'false' | {'HEADER',number()})
+{babis1,tWO_MultiplexProtocol,4} : OK
+ typesig:  ((_,nonempty_maybe_improper_list(),_,_) -> 'false' | {'MULTIPLEX_PROTOCOL',number()})
+ dataflow: ((_,_,_,_) -> 'false' | {'MULTIPLEX_PROTOCOL',number()})
+   typean: ((_,_,_,_) -> 'false' | {'MULTIPLEX_PROTOCOL',number()})
+{babis1,tWO_ObjNumber,4} : OK
+ typesig:  ((_,nonempty_maybe_improper_list(),_,_) -> 'false' | {'OBJ_NUMBER',number(),[any(),...]})
+ dataflow: ((_,_,_,_) -> 'false' | {'OBJ_NUMBER',number(),[any(),...]})
+   typean: ((_,_,_,_) -> 'false' | {'OBJ_NUMBER',number(),[any(),...]})
+{babis1,tWO_Operation,4} : OK
+ typesig:  ((_,nonempty_maybe_improper_list(),_,_) -> 'false' | {'OPERATION',number(),[any(),...]})
+ dataflow: ((_,_,_,_) -> 'false' | {'OPERATION',number(),[any(),...]})
+   typean: ((_,_,_,_) -> 'false' | {'OPERATION',number(),[any(),...]})
+{babis1,tWO_Ping,4} : OK
+ typesig:  ((_,nonempty_maybe_improper_list(),_,_) -> 'false' | {'PING',number()})
+ dataflow: ((_,_,_,_) -> 'false' | {'PING',number()})
+   typean: ((_,_,_,_) -> 'false' | {'PING',number()})
+{babis1,tWO_SingleOpProtocol,4} : OK
+ typesig:  ((_,nonempty_maybe_improper_list(),_,_) -> 'false' | {'SINGLE_OP_PROTOCOL',number()})
+ dataflow: ((_,_,_,_) -> 'false' | {'SINGLE_OP_PROTOCOL',number()})
+   typean: ((_,_,_,_) -> 'false' | {'SINGLE_OP_PROTOCOL',number()})
+{babis1,tWO_StreamProtocol,4} : OK
+ typesig:  ((_,nonempty_maybe_improper_list(),_,_) -> 'false' | {'STREAM_PROTOCOL',number()})
+ dataflow: ((_,_,_,_) -> 'false' | {'STREAM_PROTOCOL',number()})
+   typean: ((_,_,_,_) -> 'false' | {'STREAM_PROTOCOL',number()})
+{babis1,tWO_Version,4} : OK
+ typesig:  ((_,nonempty_maybe_improper_list(),_,_) -> 'false' | {'VERSION',number()})
+ dataflow: ((_,_,_,_) -> 'false' | {'VERSION',number()})
+   typean: ((_,_,_,_) -> 'false' | {'VERSION',number()})
+{babis1,tW_UidCount,4} : OK
+ typesig:  ((_,nonempty_maybe_improper_list(),_,_) -> 'false' | {'UID_COUNT',number(),[any(),...]})
+ dataflow: ((_,_,_,_) -> 'false' | {'UID_COUNT',number(),[any(),...]})
+   typean: ((_,_,_,_) -> 'false' | {'UID_COUNT',number(),[any(),...]})
+{babis1,tW_UidNumber,4} : OK
+ typesig:  ((_,nonempty_maybe_improper_list(),_,_) -> 'false' | {'UID_NUMBER',number(),[any(),...]})
+ dataflow: ((_,_,_,_) -> 'false' | {'UID_NUMBER',number(),[any(),...]})
+   typean: ((_,_,_,_) -> 'false' | {'UID_NUMBER',number(),[any(),...]})
+{babis1,tW_UidTime,4} : OK
+ typesig:  ((_,nonempty_maybe_improper_list(),_,_) -> 'false' | {'UID_TIME',number(),[any(),...]})
+ dataflow: ((_,_,_,_) -> 'false' | {'UID_TIME',number(),[any(),...]})
+   typean: ((_,_,_,_) -> 'false' | {'UID_TIME',number(),[any(),...]})
+{babis1,token,4} : OK
+ typesig:  ((_,nonempty_maybe_improper_list(),_,_) -> 'false' | {atom(),number()} | {'HASH' | 'INT' | 'OBJECT_STREAM' | 'OBJ_NUMBER' | 'OPERATION' | 'UID_COUNT' | 'UID_NUMBER' | 'UID_TIME' | 'UTF',number(),_})
+ dataflow: ((_,_,_,_) -> 'false' | {atom(),number()} | {'HASH' | 'INT' | 'OBJECT_STREAM' | 'OBJ_NUMBER' | 'OPERATION' | 'UID_COUNT' | 'UID_NUMBER' | 'UID_TIME' | 'UTF',number(),_})
+   typean: ((_,_,_,_) -> 'false' | {atom(),number()} | {'HASH' | 'INT' | 'OBJECT_STREAM' | 'OBJ_NUMBER' | 'OPERATION' | 'UID_COUNT' | 'UID_NUMBER' | 'UID_TIME' | 'UTF',number(),_})

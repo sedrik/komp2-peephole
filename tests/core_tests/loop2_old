@@ -1,0 +1,1 @@
+{{{emu_result,foo},{native_result,foo}},{{emu_compile,{ok,loop2}},{native_compile,{ok,loop2}}}}

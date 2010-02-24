@@ -1,0 +1,3 @@
+
+trecord3:mk_move/2 :: (('undefined' | #reg{} | #var{},#const{} | #reg{} | #var{}) -> #move{})
+trecord3:mk_moves/2 :: ((['undefined' | #reg{} | #var{}],[#const{} | #reg{} | #var{}]) -> [#move{dst::'undefined' | {_,_},src::{_,_}}])

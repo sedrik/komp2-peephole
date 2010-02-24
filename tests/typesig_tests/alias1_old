@@ -1,0 +1,2 @@
+
+alias1:t/1 :: (({'foo','bar'}) -> {'foo','bar'})

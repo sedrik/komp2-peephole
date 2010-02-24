@@ -1,0 +1,4 @@
+{range2,t,2} : OK
+ typesig:  ((tuple(),pos_integer()) -> any())
+ dataflow: ((_,_) -> any())
+   typean: ((_,_) -> any())

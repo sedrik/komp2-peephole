@@ -1,0 +1,10 @@
+{{result,[{ok,wings_ask},
+          {ok,wings_auv_matrix},
+          {ok,wings_e3d__tga},
+          {ok,wings_e3d__tif},
+          {ok,wings_e3d_image},
+          {ok,wings_e3d_q},
+          {ok,wings_e3d_vec},
+          {ok,wings_extrude_edge},
+          {ok,wings_pick}]},
+ {ok,wings}}

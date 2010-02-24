@@ -1,0 +1,56 @@
+{lists_all_any,all_bool,1} : OK
+ typesig:  (([any()]) -> bool())
+ dataflow: ((_) -> bool())
+   typean: ((_) -> bool())
+{lists_all_any,all_false1,0} : OK
+ typesig:  (() -> 'false')
+ dataflow: (() -> 'false')
+   typean: (() -> 'false')
+{lists_all_any,all_false2,1} : OK
+ typesig:  (([any(),...]) -> 'false')
+ dataflow: ((_) -> 'false')
+   typean: ((_) -> 'false')
+{lists_all_any,all_none,0} : OK
+ typesig:  (() -> none())
+ dataflow: (() -> 'true')
+   typean: (() -> 'true')
+{lists_all_any,all_true1,0} : OK
+ typesig:  (() -> 'true')
+ dataflow: (() -> 'true')
+   typean: (() -> 'true')
+{lists_all_any,all_true2,0} : OK
+ typesig:  (() -> 'true')
+ dataflow: (() -> 'true')
+   typean: (() -> 'true')
+{lists_all_any,any_bool,1} : OK
+ typesig:  (([any()]) -> bool())
+ dataflow: ((_) -> bool())
+   typean: ((_) -> bool())
+{lists_all_any,any_false1,0} : OK
+ typesig:  (() -> 'false')
+ dataflow: (() -> 'false')
+   typean: (() -> 'false')
+{lists_all_any,any_false2,0} : OK
+ typesig:  (() -> 'false')
+ dataflow: (() -> 'false')
+   typean: (() -> 'false')
+{lists_all_any,any_false2,1} : OK
+ typesig:  (([any(),...]) -> 'false')
+ dataflow: ((_) -> 'false')
+   typean: ((_) -> 'false')
+{lists_all_any,any_none,0} : OK
+ typesig:  (() -> none())
+ dataflow: (() -> 'true')
+   typean: (() -> 'true')
+{lists_all_any,any_true,0} : OK
+ typesig:  (() -> 'true')
+ dataflow: (() -> 'true')
+   typean: (() -> 'true')
+{lists_all_any,foreach_none,0} : OK
+ typesig:  (() -> none())
+ dataflow: (() -> 'ok')
+   typean: (() -> 'ok')
+{lists_all_any,foreach_ok,0} : OK
+ typesig:  (() -> 'ok')
+ dataflow: (() -> 'ok')
+   typean: (() -> 'ok')

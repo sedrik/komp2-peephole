@@ -1,0 +1,16 @@
+{equal1,eq1,1} : OK
+ typesig:  (('foo') -> 'foo')
+ dataflow: ((_) -> 'foo')
+   typean: ((_) -> any())
+{equal1,eq2,1} : OK
+ typesig:  (([]) -> [])
+ dataflow: ((_) -> [])
+   typean: ((_) -> any())
+{equal1,exact_eq1,1} : OK
+ typesig:  (('foo') -> 'foo')
+ dataflow: ((_) -> 'foo')
+   typean: ((_) -> any())
+{equal1,exact_eq2,1} : OK
+ typesig:  (([]) -> [])
+ dataflow: ((_) -> [])
+   typean: ((_) -> any())

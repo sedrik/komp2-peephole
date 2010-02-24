@@ -1,0 +1,16 @@
+{arith1,mystery,1} : OK
+ typesig:  ((number()) -> integer())
+ dataflow: ((_) -> integer())
+   typean: ((_) -> integer())
+{arith1,next_random,1} : OK
+ typesig:  ((integer()) -> integer())
+ dataflow: ((_) -> integer())
+   typean: ((_) -> integer())
+{arith1,next_random2,1} : OK
+ typesig:  ((integer()) -> {integer(),integer()})
+ dataflow: ((_) -> {integer(),integer()})
+   typean: ((_) -> {integer(),number()})
+{arith1,num,1} : OK
+ typesig:  ((number()) -> number())
+ dataflow: ((_) -> number())
+   typean: ((_) -> number())

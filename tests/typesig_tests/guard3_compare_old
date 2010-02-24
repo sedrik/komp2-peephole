@@ -1,0 +1,16 @@
+{guard3,t1,1} : OK
+ typesig:  ((number()) -> 'ok')
+ dataflow: ((_) -> 'ok')
+   typean: ((_) -> 'ok')
+{guard3,t2,1} : OK
+ typesig:  ((1) -> 'ok')
+ dataflow: ((_) -> 'ok')
+   typean: ((_) -> 'ok')
+{guard3,t3,1} : OK
+ typesig:  (('foo') -> 'ok')
+ dataflow: ((_) -> 'ok')
+   typean: ((_) -> 'ok')
+{guard3,t4,1} : OK
+ typesig:  (('foo') -> 'ok')
+ dataflow: ((_) -> 'ok')
+   typean: ((_) -> 'ok')

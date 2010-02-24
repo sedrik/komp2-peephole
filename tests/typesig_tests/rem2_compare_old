@@ -1,0 +1,12 @@
+{rem2,neg,1} : OK
+ typesig:  ((neg_integer()) -> -1 | 0)
+ dataflow: ((_) -> -1 | 0 | 1)
+   typean: ((_) -> -1 | 0 | 1)
+{rem2,pos,1} : OK
+ typesig:  ((pos_integer()) -> 0 | 1)
+ dataflow: ((_) -> -1 | 0 | 1)
+   typean: ((_) -> -1 | 0 | 1)
+{rem2,unknown,1} : OK
+ typesig:  ((integer()) -> -1 | 0 | 1)
+ dataflow: ((_) -> -1 | 0 | 1)
+   typean: ((_) -> -1 | 0 | 1)

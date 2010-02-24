@@ -1,0 +1,16 @@
+{fun3,l,1} : OK
+ typesig:  (([any()]) -> non_neg_integer())
+ dataflow: ((_) -> non_neg_integer())
+   typean: ((_) -> non_neg_integer())
+{fun3,l,2} : OK
+ typesig:  (([any()],non_neg_integer()) -> non_neg_integer())
+ dataflow: ((_,non_neg_integer()) -> non_neg_integer())
+   typean: ((_,non_neg_integer()) -> non_neg_integer())
+{fun3,l_fun,1} : OK
+ typesig:  ((_) -> non_neg_integer())
+ dataflow: ((_) -> non_neg_integer())
+   typean: ((_) -> non_neg_integer())
+{fun3,l_fun,2} : OK
+ typesig:  ((fun(() -> any()),non_neg_integer()) -> non_neg_integer())
+ dataflow: ((fun(() -> any()),non_neg_integer()) -> non_neg_integer())
+   typean: ((fun(() -> any()),non_neg_integer()) -> non_neg_integer())

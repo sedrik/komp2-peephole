@@ -1,0 +1,12 @@
+{fun2,mk_reader,2} : OK
+ typesig:  ((_,_) -> fun(() -> maybe_improper_list(any(),fun(() -> maybe_improper_list(any(),fun(() -> any()) | [])) | [])))
+ dataflow: ((_,_) -> fun(() -> maybe_improper_list(any(),fun(() -> any()) | [])))
+   typean: ((_,_) -> fun(() -> maybe_improper_list(any(),fun(() -> any()) | [])))
+{fun2,read_term,2} : OK
+ typesig:  ((fun((_,_) -> any()),_) -> 'eof' | {'ok',_})
+ dataflow: ((_,_) -> 'eof' | {'ok',_})
+   typean: ((_,_) -> 'eof' | {'ok',_})
+{fun2,read_term,3} : OK
+ typesig:  ((fun((_,_) -> any()),_,<<_:40>>) -> {'ok',_})
+ dataflow: ((fun((_,_) -> any()),_,binary()) -> {'ok',_})
+   typean: ((_,_,binary()) -> {'ok',_})

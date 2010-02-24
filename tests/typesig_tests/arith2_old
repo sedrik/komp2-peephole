@@ -1,0 +1,6 @@
+
+arith2:add/1 :: ((1) -> 'ok')
+arith2:mult/1 :: ((1) -> 'ok')
+arith2:sub/1 :: ((1) -> 'ok')
+arith2:two/1 :: ((2) -> 'ok')
+arith2:zero/1 :: ((0) -> 'ok')

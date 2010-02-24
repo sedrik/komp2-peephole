@@ -1,0 +1,8 @@
+
+list1:append/2 :: (([any()],_) -> any())
+list1:doit/0 :: (() -> {non_neg_integer()})
+list1:len/2 :: (([1 | 2 | 3],non_neg_integer()) -> non_neg_integer())
+list1:lists__reverse/1 :: (([any()]) -> [any()])
+list1:reverse/1 :: (([any()]) -> [any()])
+list1:reverse_acc/1 :: (([any()]) -> [any()])
+list1:reverse_acc/2 :: (([any()],[any()]) -> [any()])

@@ -1,0 +1,1 @@
+{{{emu_result,[{foo,1},{foo,2},{foo,3},{foo,4}]},{native_result,[{foo,1},{foo,2},{foo,3},{foo,4}]}},{{emu_compile,{ok,lc2}},{native_compile,{ok,lc2}}}}

@@ -1,0 +1,12 @@
+{fib2,fib_float,1} : OK
+ typesig:  ((float()) -> pos_integer())
+ dataflow: ((float()) -> pos_integer())
+   typean: ((float()) -> pos_integer())
+{fib2,fib_int,1} : OK
+ typesig:  ((non_neg_integer()) -> pos_integer())
+ dataflow: ((integer()) -> pos_integer())
+   typean: ((integer()) -> pos_integer())
+{fib2,test,0} : OK
+ typesig:  (() -> bool())
+ dataflow: (() -> bool())
+   typean: (() -> bool())

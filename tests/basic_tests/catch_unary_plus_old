@@ -1,0 +1,1 @@
+{{{emu_result,ok},{native_result,ok}},{{emu_compile,{ok,catch_unary_plus}},{native_compile,{ok,catch_unary_plus}}}}

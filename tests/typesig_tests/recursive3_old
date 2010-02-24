@@ -1,0 +1,5 @@
+
+recursive3:t1/1 :: ((atom()) -> no_return())
+recursive3:t2/1 :: ((atom()) -> no_return())
+recursive3:t3/1 :: ((atom()) -> no_return())
+recursive3:t4/1 :: ((atom()) -> no_return())

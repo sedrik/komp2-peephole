@@ -1,0 +1,4 @@
+
+bool1:and1/2 :: ((_,_) -> bool())
+bool1:and2/2 :: ((bool(),bool()) -> bool())
+bool1:and3/2 :: ((bool(),bool()) -> bool())

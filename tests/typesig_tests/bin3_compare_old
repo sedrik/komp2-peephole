@@ -1,0 +1,12 @@
+{bin3,construct_float_bin,0} : OK
+ typesig:  (() -> <<_:64>>)
+ dataflow: (() -> <<_:64>>)
+   typean: (() -> <<_:64>>)
+{bin3,construct_neg_integer_bin,0} : OK
+ typesig:  (() -> {<<_:8>>,<<_:8>>,<<_:8>>})
+ dataflow: (() -> {<<_:8>>,<<_:8>>,<<_:8>>})
+   typean: (() -> {binary(),binary(),binary()})
+{bin3,construct_pos_integer_bin,0} : OK
+ typesig:  (() -> {<<_:8>>,<<_:8>>,<<_:8>>})
+ dataflow: (() -> {<<_:8>>,<<_:8>>,<<_:8>>})
+   typean: (() -> {<<_:8>>,<<_:8>>,<<_:8>>})

@@ -1,0 +1,16 @@
+{mfalist,get_fun_mfas,1} : OK
+ typesig:  (([any()]) -> [{atom(),atom(),integer()}])
+ dataflow: ((_) -> [{_,_,_}])
+   typean: ((_) -> [any()])
+{mfalist,mfa,2} : OK
+ typesig:  (([any()],{atom(),atom(),integer()}) -> [{{_,_,_},_}])
+ dataflow: ((_,_) -> [{{_,_,_},_}])
+   typean: ((_,_) -> [{{_,_,_},_}])
+{mfalist,mfa_get,4} : OK
+ typesig:  ((atom(),atom(),integer(),[any()]) -> {_,[{atom(),atom(),integer()}]})
+ dataflow: ((atom(),atom(),integer(),[any()]) -> {_,[{_,_,_}]})
+   typean: ((_,_,_,[any()]) -> {_,[any()]})
+{mfalist,mfa_loop,4} : OK
+ typesig:  (([{atom(),atom(),integer()}],[{{_,_,_},_}],{'sets',number(),_,pos_integer(),_,_,_,_,tuple()},[any()]) -> [{{_,_,_},_}])
+ dataflow: (([{_,_,_}],[{{_,_,_},_}],{'sets',number(),_,pos_integer(),_,_,_,_,tuple()},[any()]) -> [{{_,_,_},_}])
+   typean: (([any()],[{{_,_,_},_}],_,[any()]) -> [{{_,_,_},_}])

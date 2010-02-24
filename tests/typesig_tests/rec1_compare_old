@@ -1,0 +1,4 @@
+{rec1,traverse_linked_list,1} : OK
+ typesig:  (({_,'nil' | {_,'nil' | {_,'nil' | {_,_}}}}) -> [any(),...])
+ dataflow: ((_) -> [any(),...])
+   typean: ((_) -> [any(),...])

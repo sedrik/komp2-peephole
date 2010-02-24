@@ -1,0 +1,6 @@
+
+sequence:add/3 :: ((byte(),5 | 7 | 10,5 | 7 | 10) -> 'ok')
+sequence:bad_add/2 :: ((_,_) -> none())
+sequence:t1/0 :: (() -> 'ok')
+sequence:t2/1 :: ((_) -> none())
+sequence:t3/1 :: ((_) -> none())

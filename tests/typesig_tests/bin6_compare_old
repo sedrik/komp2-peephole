@@ -1,0 +1,16 @@
+{bin6,t1,1} : differ!!!
+ typesig:  ((integer()) -> {<<_:1>>,integer()})
+ dataflow: ((_) -> {<<_:1>>,integer()})
+   typean: ((_) -> {binary(),_})
+{bin6,t2,1} : OK
+ typesig:  ((number()) -> {<<_:64>>,number()})
+ dataflow: ((_) -> {<<_:64>>,number()})
+   typean: ((_) -> {binary(),_})
+{bin6,t3,1} : OK
+ typesig:  ((_) -> none())
+ dataflow: ((_) -> none())
+   typean: ((_) -> {binary(),float()})
+{bin6,t4,1} : OK
+ typesig:  ((_) -> none())
+ dataflow: ((_) -> none())
+   typean: ((_) -> {binary(),float()})

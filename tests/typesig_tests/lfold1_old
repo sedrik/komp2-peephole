@@ -1,0 +1,7 @@
+
+lfold1:lfold_ignore_acc_list/1 :: (([any()]) -> 'gazonk' | integer())
+lfold1:lfold_ignore_acc_nil/0 :: (() -> 'gazonk')
+lfold1:lfold_ignore_acc_nonempty/0 :: (() -> 'gazonk' | integer())
+lfold1:lfold_nil/0 :: (() -> 0)
+lfold1:lfold_none/0 :: (() -> 0)
+lfold1:lfold_sum/0 :: (() -> number())

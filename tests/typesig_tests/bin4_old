@@ -1,0 +1,4 @@
+
+bin4:intlist_to_binlist/2 :: (([integer()],[<<_:32>>]) -> [<<_:32>>])
+bin4:list_to_binlist/1 :: (([non_neg_integer()]) -> {[<<_:32>>],[<<_:32>>]})
+bin4:rnglist_to_binlist/2 :: (([non_neg_integer()],[<<_:32>>]) -> [<<_:32>>])

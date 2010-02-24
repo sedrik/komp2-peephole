@@ -1,0 +1,4 @@
+{alias1,t,1} : OK
+ typesig:  (({'foo','bar'}) -> {'foo','bar'})
+ dataflow: ((_) -> {'foo','bar'})
+   typean: ((_) -> {'foo','bar'})

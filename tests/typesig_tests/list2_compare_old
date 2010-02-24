@@ -1,0 +1,20 @@
+{list2,l_atom,0} : OK
+ typesig:  (() -> none())
+ dataflow: (() -> none())
+   typean: (() -> 'ok')
+{list2,l_atom,1} : differ!!!
+ typesig:  (([atom(),...]) -> 'ok')
+ dataflow: (([1,...]) -> none())
+   typean: (([1,...]) -> 'ok')
+{list2,l_one,0} : OK
+ typesig:  (() -> none())
+ dataflow: (() -> 'ok')
+   typean: (() -> 'ok')
+{list2,l_one,1} : OK
+ typesig:  (([1,...]) -> 'ok')
+ dataflow: (([1 | 2,...]) -> 'ok')
+   typean: (([1 | 2,...]) -> 'ok')
+{list2,test,0} : OK
+ typesig:  (() -> none())
+ dataflow: (() -> none())
+   typean: (() -> {'ok','ok'})

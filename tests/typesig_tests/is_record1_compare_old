@@ -1,0 +1,32 @@
+{is_record1,t1,1} : OK
+ typesig:  ((#foo{}) -> 'ok')
+ dataflow: ((_) -> 'ok')
+   typean: ((_) -> 'ok')
+{is_record1,t2,2} : OK
+ typesig:  ((_,atom()) -> bool())
+ dataflow: ((_,_) -> bool())
+   typean: ((_,_) -> bool())
+{is_record1,t3,2} : OK
+ typesig:  ((tuple(),atom()) -> 'true')
+ dataflow: ((_,_) -> 'true')
+   typean: ((_,_) -> bool())
+{is_record1,t4,3} : OK
+ typesig:  ((_,atom(),integer()) -> bool())
+ dataflow: ((_,_,_) -> bool())
+   typean: ((_,_,_) -> bool())
+{is_record1,t5,3} : OK
+ typesig:  ((tuple(),atom(),integer()) -> 'true')
+ dataflow: ((_,_,_) -> 'true')
+   typean: ((_,_,_) -> bool())
+{is_record1,t6,1} : OK
+ typesig:  (({'bar',_,_,_,_}) -> {'bar',_,_,_,_})
+ dataflow: ((_) -> {'bar',_,_,_,_})
+   typean: ((_) -> any())
+{is_record1,t7,1} : OK
+ typesig:  (('true') -> #foo{bar::'bar'})
+ dataflow: ((_) -> #foo{bar::'bar'})
+   typean: ((_) -> {'bar','foo'} | #foo{bar::'bar'})
+{is_record1,t8,1} : OK
+ typesig:  ((#foo{bar::'bar'}) -> #foo{bar::'bar'})
+ dataflow: (({'bar','foo'} | #foo{bar::'bar'}) -> #foo{bar::'bar'})
+   typean: (({'bar','foo'} | #foo{bar::'bar'}) -> {'bar','foo'} | #foo{bar::'bar'})

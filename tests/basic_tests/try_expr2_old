@@ -1,0 +1,1 @@
+{{{emu_result,{[bar,foo,{{badmatch,fault},[{try_expr2,seq,1}]},other,throwing],[bar,foo,{{badmatch,fault},[{try_expr2,seq,1}]},other,throwing]}},{native_result,{[bar,foo,{{badmatch,fault},[{try_expr2,seq,1}]},other,throwing],[bar,foo,{{badmatch,fault},[{try_expr2,seq,1}]},other,throwing]}}},{{emu_compile,{ok,try_expr2}},{native_compile,{ok,try_expr2}}}}

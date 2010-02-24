@@ -1,0 +1,7 @@
+
+recursive2:collect/2 :: ((maybe_improper_list(),_) -> [any()])
+recursive2:collect_cseq/2 :: ((_,_) -> {{'tag' | integer(),'left' | 'right'},_,_})
+recursive2:field_val/2 :: ((_,_) -> {'tag' | integer(),_,_})
+recursive2:field_width/2 :: ((_,_) -> {'tag' | integer(),'left' | 'right',_,_})
+recursive2:value/3 :: ((_,_,integer()) -> {integer(),_,_})
+recursive2:width/3 :: (('tag' | integer(),_,_) -> {'tag' | integer(),'left' | 'right',_,_})

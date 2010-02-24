@@ -1,0 +1,12 @@
+{orelse1,zero_one_in_heads,1} : OK
+ typesig:  ((0 | 1) -> 'ok')
+ dataflow: ((_) -> 'ok')
+   typean: ((_) -> 'ok')
+{orelse1,zero_one_in_or_guard,1} : OK
+ typesig:  ((0 | 1) -> 0 | 1)
+ dataflow: ((_) -> 0 | 1)
+   typean: ((_) -> any())
+{orelse1,zero_one_in_orelse_guard,1} : OK
+ typesig:  ((0 | 1) -> 0 | 1)
+ dataflow: ((_) -> 0 | 1)
+   typean: ((_) -> any())

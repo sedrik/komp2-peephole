@@ -1,0 +1,8 @@
+{guard4,f,1} : OK
+ typesig:  ((42) -> 43)
+ dataflow: ((42) -> 43)
+   typean: ((42) -> 43)
+{guard4,test,0} : OK
+ typesig:  (() -> 43)
+ dataflow: (() -> 43)
+   typean: (() -> 43)

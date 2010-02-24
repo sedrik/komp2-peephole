@@ -1,0 +1,12 @@
+{bool1,and1,2} : OK
+ typesig:  ((_,_) -> bool())
+ dataflow: ((_,_) -> bool())
+   typean: ((_,_) -> bool())
+{bool1,and2,2} : OK
+ typesig:  ((bool(),bool()) -> bool())
+ dataflow: ((_,_) -> bool())
+   typean: ((_,_) -> bool())
+{bool1,and3,2} : OK
+ typesig:  ((bool(),bool()) -> bool())
+ dataflow: ((_,_) -> bool())
+   typean: ((_,_) -> any())

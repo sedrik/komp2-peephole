@@ -1,0 +1,1 @@
+{{{emu_result,{'EXIT',42}},{native_result,{'EXIT',42}}},{{emu_compile,{ok,simpl_ca}},{native_compile,{ok,simpl_ca}}}}

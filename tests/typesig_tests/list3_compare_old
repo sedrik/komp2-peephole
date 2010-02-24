@@ -1,0 +1,8 @@
+{list3,mystery,1} : OK
+ typesig:  (([any()]) -> [any()])
+ dataflow: ((_) -> [any()])
+   typean: ((_) -> [any()])
+{list3,mystery,2} : OK
+ typesig:  ((integer(),[any()]) -> [any(),...])
+ dataflow: ((_,_) -> [any(),...])
+   typean: ((_,_) -> [any(),...])

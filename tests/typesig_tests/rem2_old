@@ -1,0 +1,4 @@
+
+rem2:neg/1 :: ((neg_integer()) -> -1 | 0)
+rem2:pos/1 :: ((pos_integer()) -> 0 | 1)
+rem2:unknown/1 :: ((integer()) -> -1 | 0 | 1)

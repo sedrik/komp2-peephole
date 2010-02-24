@@ -1,0 +1,16 @@
+{receive3,loop,1} : OK
+ typesig:  ((#state{mode::'sleep' | 'start' | 'wait',time::1000}) -> 'ok')
+ dataflow: ((#state{mode::'sleep' | 'start' | 'wait',time::1000}) -> 'ok')
+   typean: ((#state{mode::'sleep' | 'start' | 'wait',time::1000}) -> 'ok')
+{receive3,start,0} : OK
+ typesig:  (() -> pid())
+ dataflow: (() -> pid())
+   typean: (() -> pid())
+{receive3,start,1} : OK
+ typesig:  ((#state{mode::'sleep' | 'start' | 'wait',time::1000}) -> 'ok')
+ dataflow: ((#state{mode::'sleep' | 'start' | 'wait',time::1000}) -> 'ok')
+   typean: ((#state{mode::'sleep' | 'start' | 'wait',time::1000}) -> 'ok')
+{receive3,wait,1} : OK
+ typesig:  ((#state{mode::'sleep' | 'start' | 'wait',time::1000}) -> 'ok')
+ dataflow: ((#state{mode::'sleep' | 'start' | 'wait',time::1000}) -> 'ok')
+   typean: ((#state{mode::'sleep' | 'start' | 'wait',time::1000}) -> 'ok')

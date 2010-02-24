@@ -1,0 +1,12 @@
+{tuple3,abstract,1} : OK
+ typesig:  ((binary() | [] | tuple()) -> {'nil',0} | {'bin',0,[{_,_,_,_,_}]} | {'tuple',0,[{_,_} | {_,_,_}]})
+ dataflow: ((_) -> {'nil',0} | {'bin',0,[{_,_,_,_,_}]} | {'tuple',0,[{_,_} | {_,_,_}]})
+   typean: ((_) -> {'nil',0} | {'bin',0,[{_,_,_,_,_}]} | {'tuple',0,[{_,_} | {_,_,_}]})
+{tuple3,abstract_list,1} : OK
+ typesig:  (([binary() | [] | tuple()]) -> [{'nil',0} | {'bin',0,[any()]} | {'tuple',0,[any()]}])
+ dataflow: (([any()]) -> [{'nil',0} | {'bin',0,[any()]} | {'tuple',0,[any()]}])
+   typean: (([any()]) -> [{'nil',0} | {'bin',0,[any()]} | {'tuple',0,[any()]}])
+{tuple3,test,0} : OK
+ typesig:  (() -> {'tuple',0,[{_,_} | {_,_,_}]})
+ dataflow: (() -> {'tuple',0,[{_,_} | {_,_,_}]})
+   typean: (() -> {'nil',0} | {'bin',0,[{_,_,_,_,_}]} | {'tuple',0,[{_,_} | {_,_,_}]})

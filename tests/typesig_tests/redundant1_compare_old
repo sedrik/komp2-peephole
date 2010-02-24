@@ -1,0 +1,12 @@
+{redundant1,a,1} : OK
+ typesig:  ((tuple()) -> 'record' | 'tuple')
+ dataflow: ((_) -> 'record' | 'tuple')
+   typean: ((_) -> 'record' | 'tuple')
+{redundant1,b,1} : OK
+ typesig:  ((number()) -> 'integer' | 'number')
+ dataflow: ((_) -> 'integer' | 'number')
+   typean: ((_) -> 'integer' | 'number')
+{redundant1,c,1} : OK
+ typesig:  ((0) -> 'first_zero')
+ dataflow: ((_) -> 'another_zero' | 'first_zero')
+   typean: ((_) -> 'another_zero' | 'first_zero')

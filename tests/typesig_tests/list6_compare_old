@@ -1,0 +1,20 @@
+{list6,do_flatten,2} : OK
+ typesig:  (([any()],maybe_improper_list()) -> maybe_improper_list())
+ dataflow: ((_,maybe_improper_list()) -> maybe_improper_list())
+   typean: ((_,_) -> any())
+{list6,flatlength,1} : OK
+ typesig:  (([any()]) -> non_neg_integer())
+ dataflow: ((_) -> non_neg_integer())
+   typean: ((_) -> non_neg_integer())
+{list6,flatlength,2} : OK
+ typesig:  (([any()],non_neg_integer()) -> non_neg_integer())
+ dataflow: ((_,non_neg_integer()) -> non_neg_integer())
+   typean: ((_,non_neg_integer()) -> non_neg_integer())
+{list6,flatten,1} : OK
+ typesig:  (([any()]) -> maybe_improper_list())
+ dataflow: ((_) -> maybe_improper_list())
+   typean: ((_) -> any())
+{list6,flatten,2} : OK
+ typesig:  (([any()],maybe_improper_list()) -> maybe_improper_list())
+ dataflow: ((_,_) -> maybe_improper_list())
+   typean: ((_,_) -> any())

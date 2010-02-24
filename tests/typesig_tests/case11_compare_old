@@ -1,0 +1,4 @@
+{case11,t,1} : OK
+ typesig:  ((1 | 2) -> 'a' | 'b' | 'ok')
+ dataflow: ((_) -> 'a' | 'b' | 'ok')
+   typean: ((_) -> 'a' | 'b' | 'ok')

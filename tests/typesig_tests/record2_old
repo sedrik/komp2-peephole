@@ -1,0 +1,4 @@
+
+record2:bar/1 :: ((#foo{bar::1}) -> #foo{bar::1})
+record2:t1/0 :: (() -> none())
+record2:t2/0 :: (() -> #foo{bar::1})

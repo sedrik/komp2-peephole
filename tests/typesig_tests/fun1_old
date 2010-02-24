@@ -1,0 +1,5 @@
+
+fun1:m/2 :: ((fun((_) -> any()),[any()]) -> [any()])
+fun1:map2/2 :: ((fun((_) -> any()),[any()]) -> [any()])
+fun1:map/2 :: ((fun(),[any()]) -> [any()])
+fun1:mmap/2 :: ((fun() | {_,_},[any()]) -> [any()])

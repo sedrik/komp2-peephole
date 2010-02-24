@@ -1,0 +1,8 @@
+{func_head1,t,0} : OK
+ typesig:  (() -> 'ok')
+ dataflow: (() -> 'ok')
+   typean: (() -> 'error1' | 'error2' | 'ok')
+{func_head1,t,1} : OK
+ typesig:  ((1) -> 'ok')
+ dataflow: ((1) -> 'ok')
+   typean: ((1) -> 'error1' | 'error2' | 'ok')

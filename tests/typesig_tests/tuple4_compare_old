@@ -1,0 +1,4 @@
+{tuple4,to_tuple,1} : OK
+ typesig:  ((integer() | tuple()) -> tuple())
+ dataflow: ((_) -> tuple())
+   typean: ((_) -> tuple())

@@ -1,0 +1,4 @@
+{recursive1,beam_file,1} : OK
+ typesig:  ((atom() | {atom() | {atom() | {atom() | {_,_,_},_,_},_,_},_,_}) -> 'cover_compiled' | 'preloaded' | string())
+ dataflow: ((_) -> 'cover_compiled' | 'preloaded' | string())
+   typean: ((_) -> 'cover_compiled' | 'non_existing' | 'preloaded' | string())

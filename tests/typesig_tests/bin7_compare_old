@@ -1,0 +1,16 @@
+{bin7,match1,2} : OK
+ typesig:  ((8,<<_:24>>) -> {byte(),<<_:16>>})
+ dataflow: ((8,<<_:24>>) -> {byte(),<<_:16>>})
+   typean: ((8,<<_:24>>) -> {integer(),binary()})
+{bin7,match2,1} : OK
+ typesig:  ((<<_:32>>) -> {byte(),<<_:24>>})
+ dataflow: ((<<_:32>>) -> {byte(),<<_:24>>})
+   typean: ((<<_:32>>) -> {byte(),binary()})
+{bin7,t1,0} : OK
+ typesig:  (() -> {byte(),<<_:16>>})
+ dataflow: (() -> {byte(),<<_:16>>})
+   typean: (() -> {integer(),binary()})
+{bin7,t2,0} : OK
+ typesig:  (() -> {byte(),<<_:24>>})
+ dataflow: (() -> {byte(),<<_:24>>})
+   typean: (() -> {byte(),binary()})

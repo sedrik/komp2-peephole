@@ -1,0 +1,16 @@
+{case12,t1,1} : OK
+ typesig:  (({'a',_} | {'b',_} | {'c',_} | {'d',_,_} | {'e',_,_} | {'f',_,_} | {'g',_,_,_} | {'h',_,_,_} | {'i',_,_,_} | {'j',_,_,_}) -> 'i_dont_want_to_be_alone' | 'i_will_be_your_friend')
+ dataflow: ((_) -> 'i_dont_want_to_be_alone' | 'i_will_be_your_friend')
+   typean: ((_) -> 'i_dont_want_to_be_alone' | 'i_will_be_your_friend')
+{case12,t2,1} : OK
+ typesig:  (({'a',_} | {'b',_} | {'c',_} | {'d',_,_} | {'e',_,_} | {'f',_,_} | {'g',_,_,_} | {'h',_,_,_} | {'i',_,_,_} | {'j',_,_,_}) -> 'i_dont_want_to_be_alone' | 'i_will_be_your_friend')
+ dataflow: ((_) -> 'i_dont_want_to_be_alone' | 'i_will_be_your_friend')
+   typean: ((_) -> 'i_dont_want_to_be_alone' | 'i_will_be_your_friend')
+{case12,t3,1} : OK
+ typesig:  (({'a',_} | {'b',_} | {'c',_} | {'d',_,_} | {'e',_,_} | {'f',_,_} | {'g',_,_,_} | {'h',_,_,_} | {'i',_,_,_} | {'j',_,_,_}) -> {'a',_} | {'b',_} | {'c',_} | {'d',_,_} | {'e',_,_} | {'f',_,_} | {'g',_,_,_} | {'h',_,_,_} | {'i',_,_,_} | {'j',_,_,_})
+ dataflow: ((_) -> {'a',_} | {'b',_} | {'c',_} | {'d',_,_} | {'e',_,_} | {'f',_,_} | {'g',_,_,_} | {'h',_,_,_} | {'i',_,_,_} | {'j',_,_,_})
+   typean: ((_) -> any())
+{case12,t4,1} : OK
+ typesig:  (({'a',_} | {'b',_} | {'c',_} | {'d',_,_} | {'e',_,_} | {'f',_,_} | {'g',_,_,_} | {'h',_,_,_} | {'i',_,_,_} | {'j',_,_,_}) -> 'i_dont_want_to_be_alone' | 'i_will_be_your_friend')
+ dataflow: (({'a',_} | {'b',_} | {'c',_} | {'d',_,_} | {'e',_,_} | {'f',_,_} | {'g',_,_,_} | {'h',_,_,_} | {'i',_,_,_} | {'j',_,_,_}) -> 'i_dont_want_to_be_alone' | 'i_will_be_your_friend')
+   typean: ((_) -> 'i_dont_want_to_be_alone' | 'i_will_be_your_friend')

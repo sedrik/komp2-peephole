@@ -1,0 +1,3 @@
+
+case8:t/1 :: ((integer()) -> 'ok')
+case8:t2/0 :: (() -> float())

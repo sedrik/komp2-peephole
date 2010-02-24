@@ -1,0 +1,44 @@
+{lzip1,unzip1_error,0} : OK
+ typesig:  (() -> none())
+ dataflow: (() -> none())
+   typean: (() -> none())
+{lzip1,unzip1_known_types,0} : OK
+ typesig:  (() -> {[1 | 2],['a' | 'b']})
+ dataflow: (() -> {[1 | 2],['a' | 'b']})
+   typean: (() -> {[1 | 2],['a' | 'b']})
+{lzip1,unzip1_nil,0} : OK
+ typesig:  (() -> {[],[]})
+ dataflow: (() -> {[],[]})
+   typean: (() -> {[],[]})
+{lzip1,unzip1_unknown_types,1} : OK
+ typesig:  (([{_,_}]) -> {[any()],[any()]})
+ dataflow: ((_) -> {[any()],[any()]})
+   typean: ((_) -> {[any()],[any()]})
+{lzip1,unzip3_known_types,0} : OK
+ typesig:  (() -> {['a'],['b'],['c']})
+ dataflow: (() -> {['a'],['b'],['c']})
+   typean: (() -> {['a'],['b'],['c']})
+{lzip1,zip2,0} : OK
+ typesig:  (() -> [{1 | 2,'a' | 'b'}])
+ dataflow: (() -> [{1 | 2,'a' | 'b'}])
+   typean: (() -> [{1 | 2,'a' | 'b'}])
+{lzip1,zip3,0} : OK
+ typesig:  (() -> [{1 | 2,'a' | 'b',float()}])
+ dataflow: (() -> [{1 | 2,'a' | 'b',float()}])
+   typean: (() -> [{1 | 2,'a' | 'b',float()}])
+{lzip1,zipwith3,0} : OK
+ typesig:  (() -> [{_,_}])
+ dataflow: (() -> [{_,_}])
+   typean: (() -> [{_,_}])
+{lzip1,zipwith3_nil,0} : OK
+ typesig:  (() -> [{_,_}])
+ dataflow: (() -> [{_,_}])
+   typean: (() -> [{_,_}])
+{lzip1,zipwith4,0} : OK
+ typesig:  (() -> [{_,'gazonk',_}])
+ dataflow: (() -> [{_,'gazonk',_}])
+   typean: (() -> [{_,'gazonk',_}])
+{lzip1,zipwith4_nil,0} : OK
+ typesig:  (() -> [{_,'gazonk',_}])
+ dataflow: (() -> [{_,'gazonk',_}])
+   typean: (() -> [{_,'gazonk',_}])

@@ -1,0 +1,6 @@
+
+trecord1:t1/1 :: ((#rec2{}) -> #rec2{})
+trecord1:t2/1 :: ((#rec2{}) -> integer())
+trecord1:t3/1 :: ((#rec2{bar::1}) -> 'ok')
+trecord1:t4/1 :: ((#rec2{}) -> 'undefined' | float())
+trecord1:t5/1 :: ((#rec2{}) -> 'undefined' | #rec1{})

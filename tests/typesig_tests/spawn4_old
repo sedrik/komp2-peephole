@@ -1,0 +1,2 @@
+
+spawn4:spawn/4 :: ((atom(),atom(),atom(),[any()]) -> pid())

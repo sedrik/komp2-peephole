@@ -1,0 +1,1 @@
+{{{emu_result,42},{native_result,42}},{{emu_compile,{ok,simpl_send_rec2}},{native_compile,{ok,simpl_send_rec2}}}}

@@ -1,0 +1,4 @@
+{fun10,t,1} : OK
+ typesig:  (([any()]) -> [1])
+ dataflow: ((_) -> [1])
+   typean: ((_) -> [1])

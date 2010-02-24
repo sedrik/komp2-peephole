@@ -1,0 +1,20 @@
+{arith2,add,1} : OK
+ typesig:  ((1) -> 'ok')
+ dataflow: ((_) -> 'ok')
+   typean: ((_) -> 'ok')
+{arith2,mult,1} : OK
+ typesig:  ((1) -> 'ok')
+ dataflow: ((_) -> 'ok')
+   typean: ((_) -> 'ok')
+{arith2,sub,1} : OK
+ typesig:  ((1) -> 'ok')
+ dataflow: ((_) -> 'ok')
+   typean: ((_) -> 'ok')
+{arith2,two,1} : OK
+ typesig:  ((2) -> 'ok')
+ dataflow: ((number()) -> 'ok')
+   typean: ((number()) -> 'ok')
+{arith2,zero,1} : OK
+ typesig:  ((0) -> 'ok')
+ dataflow: ((number()) -> 'ok')
+   typean: ((number()) -> 'ok')

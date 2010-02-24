@@ -1,0 +1,5 @@
+
+bin6:t1/1 :: ((integer()) -> {<<_:1>>,integer()})
+bin6:t2/1 :: ((number()) -> {<<_:64>>,number()})
+bin6:t3/1 :: ((_) -> none())
+bin6:t4/1 :: ((_) -> none())

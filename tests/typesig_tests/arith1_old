@@ -1,0 +1,5 @@
+
+arith1:mystery/1 :: ((number()) -> integer())
+arith1:next_random/1 :: ((integer()) -> integer())
+arith1:next_random2/1 :: ((integer()) -> {integer(),integer()})
+arith1:num/1 :: ((number()) -> number())

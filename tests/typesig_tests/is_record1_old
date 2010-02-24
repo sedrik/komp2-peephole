@@ -1,0 +1,9 @@
+
+is_record1:t1/1 :: ((#foo{}) -> 'ok')
+is_record1:t2/2 :: ((_,atom()) -> bool())
+is_record1:t3/2 :: ((tuple(),atom()) -> 'true')
+is_record1:t4/3 :: ((_,atom(),integer()) -> bool())
+is_record1:t5/3 :: ((tuple(),atom(),integer()) -> 'true')
+is_record1:t6/1 :: (({'bar',_,_,_,_}) -> {'bar',_,_,_,_})
+is_record1:t7/1 :: (('true') -> #foo{bar::'bar'})
+is_record1:t8/1 :: ((#foo{bar::'bar'}) -> #foo{bar::'bar'})

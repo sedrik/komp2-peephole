@@ -1,0 +1,5 @@
+
+list11:highest_label/1 :: (([any()]) -> integer())
+list11:highest_label/2 :: (([any()],'undefined' | integer()) -> integer())
+list11:is_label/1 :: ((_) -> bool())
+list11:label_name/1 :: ((#label{}) -> 'undefined' | integer())

@@ -1,0 +1,7 @@
+
+letrec1:add_one/1 :: ((number()) -> number())
+letrec1:add_one_int/1 :: ((integer()) -> integer())
+letrec1:t1/1 :: (([number()]) -> [number()])
+letrec1:t2/1 :: (([any()]) -> [integer()])
+letrec1:t3/1 :: (([number()]) -> [number()])
+letrec1:t4/1 :: (([integer()]) -> [integer()])

@@ -1,0 +1,1 @@
+{{{emu_result,{ok,[child1,child2]}},{native_result,{ok,[child1,child2]}}},{{emu_compile,{ok,sccp_bug_1}},{native_compile,{ok,sccp_bug_1}}}}

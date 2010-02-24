@@ -1,0 +1,8 @@
+{partialsums,loop,12} : OK
+ typesig:  ((integer(),integer(),float(),float(),float(),float(),float(),float(),float(),float(),float(),float()) -> [float(),...])
+ dataflow: ((integer(),integer(),float(),float(),float(),float(),float(),float(),float(),float(),float(),float()) -> [float(),...])
+   typean: ((integer(),integer(),float(),float(),float(),float(),float(),float(),float(),float(),float(),float()) -> [float(),...])
+{partialsums,main,1} : differ!!!
+ typesig:  ((_) -> any())
+ dataflow: ((none()) -> none())
+   typean: ((_) -> none())

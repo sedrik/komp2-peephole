@@ -1,0 +1,4 @@
+{receive5,call,1} : OK
+ typesig:  (('infinity' | integer()) -> any())
+ dataflow: ((_) -> any())
+   typean: ((_) -> any())

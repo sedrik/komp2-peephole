@@ -1,0 +1,24 @@
+{try3,arg_flush,1} : OK
+ typesig:  (('none' | 'sync') -> 0 | 1)
+ dataflow: ((_) -> 0 | 1)
+   typean: ((_) -> 0 | 1)
+{try3,call,3} : OK
+ typesig:  ((atom() | port(),7,<<_:32>>) -> atom() | non_neg_integer())
+ dataflow: ((atom() | port(),7,<<_:32>>) -> atom() | non_neg_integer())
+   typean: ((_,7,binary()) -> any())
+{try3,collect,1} : OK
+ typesig:  ((atom() | port()) -> [any()])
+ dataflow: ((atom() | port()) -> [any()])
+   typean: ((_) -> [any()])
+{try3,collect,2} : OK
+ typesig:  ((atom() | port(),[any()]) -> [any()])
+ dataflow: ((atom() | port(),[any()]) -> [any()])
+   typean: ((_,[any()]) -> [any()])
+{try3,deflate,3} : OK
+ typesig:  ((atom() | port(),binary() | maybe_improper_list(binary() | maybe_improper_list(any(),binary() | []) | byte(),binary() | []),'none' | 'sync') -> [any()])
+ dataflow: ((_,_,_) -> [any()])
+   typean: ((_,_,_) -> any())
+{try3,flush,1} : OK
+ typesig:  ((_) -> 'ok')
+ dataflow: ((_) -> 'ok')
+   typean: ((_) -> 'ok')

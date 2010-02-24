@@ -1,0 +1,4 @@
+
+catch1:add_one/1 :: ((integer()) -> integer())
+catch1:t1/1 :: ((_) -> any())
+catch1:t2/2 :: ((atom(),integer()) -> {_,_})

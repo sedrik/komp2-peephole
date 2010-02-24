@@ -1,0 +1,8 @@
+{record3,expand_segs,2} : OK
+ typesig:  ((tuple(),_) -> tuple())
+ dataflow: ((_,_) -> tuple())
+   typean: ((_,_) -> tuple())
+{record3,m,1} : OK
+ typesig:  ((#dict{segs::tuple()}) -> #dict{segs::tuple()})
+ dataflow: ((_) -> #dict{segs::tuple()})
+   typean: ((_) -> #dict{n::any(),segs::tuple()})

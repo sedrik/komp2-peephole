@@ -1,0 +1,4 @@
+
+bin2:f/1 :: ((number()) -> number())
+bin2:i/1 :: ((number()) -> number())
+bin2:t/3 :: ((non_neg_integer(),number(),number()) -> <<_:8,_:_*1>>)

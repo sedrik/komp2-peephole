@@ -1,0 +1,4 @@
+{byte1,is_byte,1} : OK
+ typesig:  ((byte()) -> 'true')
+ dataflow: ((_) -> 'true')
+   typean: ((_) -> 'true')

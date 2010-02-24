@@ -1,0 +1,6 @@
+
+list6:do_flatten/2 :: (([any()],maybe_improper_list()) -> maybe_improper_list())
+list6:flatlength/1 :: (([any()]) -> non_neg_integer())
+list6:flatlength/2 :: (([any()],non_neg_integer()) -> non_neg_integer())
+list6:flatten/1 :: (([any()]) -> maybe_improper_list())
+list6:flatten/2 :: (([any()],maybe_improper_list()) -> maybe_improper_list())

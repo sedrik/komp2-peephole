@@ -1,0 +1,8 @@
+{fun8,t,0} : OK
+ typesig:  (() -> 'ok')
+ dataflow: (() -> 'ok')
+   typean: (() -> 'ok')
+{fun8,t,1} : OK
+ typesig:  ((fun((_) -> any())) -> 'ok')
+ dataflow: ((_) -> 'ok')
+   typean: ((_) -> 'ok')

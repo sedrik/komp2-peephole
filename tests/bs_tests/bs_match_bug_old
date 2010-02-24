@@ -1,0 +1,1 @@
+{{{emu_result,{<<49,50,51>>,<<49,50,51>>}},{native_result,{<<49,50,51>>,<<49,50,51>>}}},{{emu_compile,{ok,bs_match_bug}},{native_compile,{ok,bs_match_bug}}}}

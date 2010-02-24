@@ -1,0 +1,1 @@
+{{{emu_result,ok},{native_result,ok}},{{emu_compile,{ok,tuple_as_fun_bug}},{native_compile,{ok,tuple_as_fun_bug}}}}

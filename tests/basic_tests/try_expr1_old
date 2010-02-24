@@ -1,0 +1,1 @@
+{{{emu_result,exception_caught_properly},{native_result,exception_caught_properly}},{{emu_compile,{ok,try_expr1}},{native_compile,{ok,try_expr1}}}}

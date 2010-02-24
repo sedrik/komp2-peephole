@@ -1,0 +1,4 @@
+
+rem1:bar/1 :: ((float()) -> float())
+rem1:foo/1 :: ((pos_integer()) -> 0 | 1)
+rem1:t/1 :: ((pos_integer()) -> 0 | 1)

@@ -1,0 +1,3 @@
+
+guard5:is_atom/1 :: ((atom()) -> 'true')
+guard5:is_bool/1 :: ((_) -> 'false')

@@ -1,0 +1,1 @@
+{{{emu_result,ok},{native_result,ok}},{{emu_compile,{ok,heap_allocate_trim}},{native_compile,{ok,heap_allocate_trim}}}}

@@ -1,0 +1,12 @@
+{karol,expand_args_any,1} : OK
+ typesig:  (('karol' | non_neg_integer()) -> [[95,...]])
+ dataflow: ((_) -> [[95,...]])
+   typean: ((_) -> [[95,...]])
+{karol,three,0} : OK
+ typesig:  (() -> 3)
+ dataflow: (() -> 3)
+   typean: (() -> 3)
+{karol,two,0} : OK
+ typesig:  (() -> 2)
+ dataflow: (() -> 2)
+   typean: (() -> 2)

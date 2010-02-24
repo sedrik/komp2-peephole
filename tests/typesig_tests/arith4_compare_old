@@ -1,0 +1,8 @@
+{arith4,foo,0} : OK
+ typesig:  (() -> 4 | 8)
+ dataflow: (() -> 4 | 8)
+   typean: (() -> 4 | 8)
+{arith4,t1,1} : OK
+ typesig:  ((_) -> bool())
+ dataflow: ((_) -> bool())
+   typean: ((_) -> bool())

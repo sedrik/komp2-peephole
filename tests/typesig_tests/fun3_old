@@ -1,0 +1,5 @@
+
+fun3:l/1 :: (([any()]) -> non_neg_integer())
+fun3:l/2 :: (([any()],non_neg_integer()) -> non_neg_integer())
+fun3:l_fun/1 :: ((_) -> non_neg_integer())
+fun3:l_fun/2 :: ((fun(() -> any()),non_neg_integer()) -> non_neg_integer())

@@ -1,0 +1,12 @@
+{catch1,add_one,1} : OK
+ typesig:  ((integer()) -> integer())
+ dataflow: ((atom() | integer()) -> integer())
+   typean: ((_) -> number())
+{catch1,t1,1} : OK
+ typesig:  ((_) -> any())
+ dataflow: ((_) -> any())
+   typean: ((_) -> any())
+{catch1,t2,2} : OK
+ typesig:  ((atom(),integer()) -> {_,_})
+ dataflow: ((_,_) -> {_,_})
+   typean: ((_,_) -> {_,_})

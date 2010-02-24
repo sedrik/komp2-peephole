@@ -1,0 +1,4 @@
+{list4,t,1} : OK
+ typesig:  (([any()]) -> 'ok')
+ dataflow: ((_) -> 'ok')
+   typean: ((_) -> 'ok')

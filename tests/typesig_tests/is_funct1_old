@@ -1,0 +1,5 @@
+
+is_funct1:f1/2 :: ((fun(),1 | 2) -> 'binary' | 'unary')
+is_funct1:f/1 :: ((fun((_) -> any())) -> 'ok')
+is_funct1:f2/2 :: ((fun((_,_) -> any()),2) -> 'binary')
+is_funct1:f3/1 :: ((fun((_,_,_) -> any())) -> fun((_,_,_) -> any()))

@@ -1,0 +1,4 @@
+{receive1,t,0} : OK
+ typesig:  (() -> 'ok' | {'float',float()} | {'int',integer()})
+ dataflow: (() -> 'ok' | {'float',float()} | {'int',integer()})
+   typean: (() -> 'ok' | {'float',float()} | {'int',integer()})

@@ -1,0 +1,24 @@
+{lists_fold,fold_ignore_acc_list,1} : OK
+ typesig:  (([any()]) -> 'gazonk' | integer())
+ dataflow: ((_) -> 'gazonk' | integer())
+   typean: ((_) -> 'gazonk' | integer())
+{lists_fold,fold_ignore_acc_nil,0} : OK
+ typesig:  (() -> 'gazonk')
+ dataflow: (() -> 'gazonk')
+   typean: (() -> 'gazonk')
+{lists_fold,fold_ignore_acc_nonempty,0} : OK
+ typesig:  (() -> integer())
+ dataflow: (() -> integer())
+   typean: (() -> integer())
+{lists_fold,fold_nil,0} : OK
+ typesig:  (() -> 0)
+ dataflow: (() -> 0)
+   typean: (() -> 0)
+{lists_fold,fold_none,0} : OK
+ typesig:  (() -> none())
+ dataflow: (() -> none())
+   typean: (() -> none())
+{lists_fold,fold_sum,0} : OK
+ typesig:  (() -> number())
+ dataflow: (() -> number())
+   typean: (() -> number())

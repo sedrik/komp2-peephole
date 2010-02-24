@@ -1,0 +1,4 @@
+{l2i,main,1} : OK
+ typesig:  (([[byte()],...]) -> integer())
+ dataflow: ((_) -> integer())
+   typean: ((_) -> integer())

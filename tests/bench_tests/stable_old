@@ -1,0 +1,1 @@
+{{{emu_result,[2,4,8,7,6,9,3,5,10,1]},{native_result,[2,4,8,7,6,9,3,5,10,1]}},{{emu_compile,{ok,stable}},{native_compile,{ok,stable}}}}

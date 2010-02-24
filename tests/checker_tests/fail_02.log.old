@@ -1,0 +1,52 @@
+
+=INFO REPORT==== 18-Mar-2008::09:37:11 ===
+Call violates the contract of fail_01:two/1
+  argument type(s):
+    3
+  are not all subtypes of:
+    1 | 2
+  stacktrace:
+    [{fail_01,two,1},
+     {fail_01,test,0},
+     {fail_02,test,0},
+     {checker,with_error_handler,4}]
+=INFO REPORT==== 18-Mar-2008::09:37:11 ===
+Call violates the contract of fail_01:takes_atom/1
+  argument type(s):
+    5
+  are not all subtypes of:
+    atom()
+  stacktrace:
+    [{fail_01,takes_atom,1},
+     {fail_01,test,0},
+     {fail_02,test,0},
+     {checker,with_error_handler,4}]
+=INFO REPORT==== 18-Mar-2008::09:37:11 ===
+Call violates the contract of fail_01:test_contract_print_order/3
+  argument type(s):
+    'ok'
+    1
+    'ok'
+  are not all subtypes of:
+    atom()
+    integer()
+    tuple()
+  stacktrace:
+    [{fail_01,test_contract_print_order,3},
+     {fail_01,test,0},
+     {fail_02,test,0},
+     {checker,with_error_handler,4}]
+=INFO REPORT==== 18-Mar-2008::09:37:11 ===
+Return violates the contract of fail_01:test/0:
+  the term:
+    'ko'
+  is not a subtype of:
+    'ok'
+  stacktrace: [{fail_02,test,0},{checker,with_error_handler,4}]
+=INFO REPORT==== 18-Mar-2008::09:37:11 ===
+Return violates the contract of fail_02:test/0:
+  the term:
+    'ko'
+  is not a subtype of:
+    'ok'
+  stacktrace: [{checker,with_error_handler,4}]

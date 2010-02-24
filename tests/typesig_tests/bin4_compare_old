@@ -1,0 +1,12 @@
+{bin4,intlist_to_binlist,2} : OK
+ typesig:  (([integer()],[<<_:32>>]) -> [<<_:32>>])
+ dataflow: ((_,[<<_:32>>]) -> [<<_:32>>])
+   typean: ((_,[binary()]) -> [binary()])
+{bin4,list_to_binlist,1} : OK
+ typesig:  (([non_neg_integer()]) -> {[<<_:32>>],[<<_:32>>]})
+ dataflow: ((_) -> {[<<_:32>>],[<<_:32>>]})
+   typean: ((_) -> {[binary()],[binary()]})
+{bin4,rnglist_to_binlist,2} : OK
+ typesig:  (([non_neg_integer()],[<<_:32>>]) -> [<<_:32>>])
+ dataflow: ((_,[<<_:32>>]) -> [<<_:32>>])
+   typean: ((_,[binary()]) -> [binary()])

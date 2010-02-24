@@ -1,0 +1,3 @@
+
+int_mult1:f/2 :: ((integer(),integer()) -> integer())
+int_mult1:g/2 :: ((integer(),integer()) -> integer())

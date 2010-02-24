@@ -1,0 +1,1 @@
+{{{emu_result,{small1,small2,big1,big2,ok,pid,float}},{native_result,{small1,small2,big1,big2,ok,pid,float}}},{{emu_compile,{ok,switch_mix}},{native_compile,{ok,switch_mix}}}}

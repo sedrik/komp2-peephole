@@ -1,0 +1,2 @@
+
+fib3:fib/1 :: ((integer()) -> integer())

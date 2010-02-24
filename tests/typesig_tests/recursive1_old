@@ -1,0 +1,2 @@
+
+recursive1:beam_file/1 :: ((atom() | {atom() | {atom() | {atom() | {_,_,_},_,_},_,_},_,_}) -> 'cover_compiled' | 'preloaded' | string())

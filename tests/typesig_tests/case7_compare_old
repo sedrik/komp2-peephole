@@ -1,0 +1,8 @@
+{case7,t,0} : OK
+ typesig:  (() -> {'ok',1})
+ dataflow: (() -> {'ok',1})
+   typean: (() -> 'error' | {'ok',1})
+{case7,t,1} : OK
+ typesig:  (('foo') -> {1,'bar'})
+ dataflow: ((_) -> {1,'bar'})
+   typean: ((_) -> {1,'bar'})

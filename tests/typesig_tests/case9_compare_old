@@ -1,0 +1,16 @@
+{case9,t,0} : OK
+ typesig:  (() -> 'ok')
+ dataflow: (() -> 'ok')
+   typean: (() -> 'error' | 'ok')
+{case9,t2,0} : OK
+ typesig:  (() -> 'true')
+ dataflow: (() -> 'true')
+   typean: (() -> 'true')
+{case9,t3,1} : OK
+ typesig:  ((_) -> 'ok')
+ dataflow: ((_) -> 'ok')
+   typean: ((_) -> 'error' | 'ok')
+{case9,t4,1} : OK
+ typesig:  ((bool()) -> 'ok')
+ dataflow: ((_) -> 'ok')
+   typean: ((_) -> 'error' | 'ok')

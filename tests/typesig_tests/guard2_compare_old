@@ -1,0 +1,32 @@
+{guard2,t1,1} : OK
+ typesig:  ((atom() | [any()]) -> 'ok')
+ dataflow: ((_) -> 'ok')
+   typean: ((_) -> 'ok')
+{guard2,t2,1} : OK
+ typesig:  ((_) -> none())
+ dataflow: ((_) -> none())
+   typean: ((_) -> 'ok')
+{guard2,t3,1} : OK
+ typesig:  (('foo') -> 'ok')
+ dataflow: ((_) -> 'ok')
+   typean: ((_) -> 'ok')
+{guard2,t4,1} : OK
+ typesig:  (('bar' | 'foo') -> 'ok')
+ dataflow: ((_) -> 'ok')
+   typean: ((_) -> 'ok')
+{guard2,t5,2} : OK
+ typesig:  (([any()],[any()]) -> 'ok')
+ dataflow: ((_,_) -> 'ok')
+   typean: ((_,_) -> 'ok')
+{guard2,t6,1} : OK
+ typesig:  (('true') -> 'ok')
+ dataflow: ((_) -> 'ok')
+   typean: ((_) -> 'ok')
+{guard2,t7,1} : OK
+ typesig:  (('false') -> 'ok')
+ dataflow: ((_) -> 'ok')
+   typean: ((_) -> 'ok')
+{guard2,t8,1} : OK
+ typesig:  ((binary() | tuple()) -> 'ok')
+ dataflow: ((_) -> 'ok')
+   typean: ((_) -> 'ok')

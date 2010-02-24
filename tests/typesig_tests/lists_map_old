@@ -1,0 +1,13 @@
+
+lists_map:flatmap1/0 :: (() -> [any(),...])
+lists_map:flatmap2/0 :: (() -> [integer(),...])
+lists_map:flatmap_nil1/0 :: (() -> [])
+lists_map:flatmap_nil2/1 :: (([any()]) -> [])
+lists_map:flatmap_none1/0 :: (() -> none())
+lists_map:flatmap_none2/0 :: (() -> none())
+lists_map:map_int_list/0 :: (() -> [integer(),...])
+lists_map:map_list/0 :: (() -> [any(),...])
+lists_map:map_nil1/0 :: (() -> [])
+lists_map:map_nil2/1 :: (([any()]) -> [])
+lists_map:map_none1/0 :: (() -> none())
+lists_map:map_none2/0 :: (() -> none())

@@ -1,0 +1,2 @@
+
+guard1:t/1 :: ((atom() | integer()) -> 'atom' | 'int')

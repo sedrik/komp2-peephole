@@ -1,0 +1,4 @@
+{trecord2,mk_icode,1} : OK
+ typesig:  (('false' | 'true' | 'undefined') -> #icode{closure_arity::'undefined',info::[]})
+ dataflow: ((_) -> #icode{closure_arity::'undefined',info::[]})
+   typean: ((_) -> #icode{is_closure::any(),closure_arity::'undefined',info::[]})

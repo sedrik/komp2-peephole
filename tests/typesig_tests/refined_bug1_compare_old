@@ -1,0 +1,12 @@
+{refined_bug1,chars,2} : OK
+ typesig:  ((integer(),non_neg_integer()) -> [integer()])
+ dataflow: ((_,_) -> [integer()])
+   typean: ((_,_) -> [any()])
+{refined_bug1,chars,3} : OK
+ typesig:  ((integer(),non_neg_integer(),[]) -> [integer()])
+ dataflow: ((_,_,[]) -> [integer()])
+   typean: ((_,_,[]) -> [any()])
+{refined_bug1,chars1,3} : OK
+ typesig:  ((integer(),non_neg_integer(),[integer()]) -> [integer()])
+ dataflow: ((integer(),integer(),[integer()]) -> [integer()])
+   typean: ((_,_,[any()]) -> [any()])

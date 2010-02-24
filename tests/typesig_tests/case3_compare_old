@@ -1,0 +1,4 @@
+{case3,t,2} : OK
+ typesig:  ((1 | 2,string() | number()) -> atom() | number())
+ dataflow: ((_,_) -> atom() | number())
+   typean: ((_,_) -> atom() | number())

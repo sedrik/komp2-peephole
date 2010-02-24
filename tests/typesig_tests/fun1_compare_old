@@ -1,0 +1,16 @@
+{fun1,m,2} : OK
+ typesig:  ((fun((_) -> any()),[any()]) -> [any()])
+ dataflow: ((_,_) -> [any()])
+   typean: ((_,_) -> [any()])
+{fun1,map,2} : OK
+ typesig:  ((fun(),[any()]) -> [any()])
+ dataflow: ((_,_) -> [any()])
+   typean: ((_,_) -> [any()])
+{fun1,map2,2} : OK
+ typesig:  ((fun((_) -> any()),[any()]) -> [any()])
+ dataflow: ((_,_) -> [any()])
+   typean: ((_,_) -> [any()])
+{fun1,mmap,2} : OK
+ typesig:  ((fun() | {_,_},[any()]) -> [any()])
+ dataflow: ((_,_) -> [any()])
+   typean: ((_,_) -> [any()])

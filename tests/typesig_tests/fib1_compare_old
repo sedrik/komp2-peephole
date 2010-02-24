@@ -1,0 +1,4 @@
+{fib1,fib,1} : OK
+ typesig:  ((non_neg_integer()) -> pos_integer())
+ dataflow: ((_) -> pos_integer())
+   typean: ((_) -> pos_integer())

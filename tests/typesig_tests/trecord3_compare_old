@@ -1,0 +1,8 @@
+{trecord3,mk_move,2} : OK
+ typesig:  (('undefined' | #reg{} | #var{},#const{} | #reg{} | #var{}) -> #move{})
+ dataflow: ((_,_) -> #move{})
+   typean: ((_,_) -> #move{dst::any(),src::any()})
+{trecord3,mk_moves,2} : OK
+ typesig:  ((['undefined' | #reg{} | #var{}],[#const{} | #reg{} | #var{}]) -> [#move{dst::'undefined' | {_,_},src::{_,_}}])
+ dataflow: ((_,_) -> [#move{dst::'undefined' | {_,_},src::{_,_}}])
+   typean: ((_,_) -> [#move{dst::any(),src::any()}])

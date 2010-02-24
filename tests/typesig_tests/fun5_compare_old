@@ -1,0 +1,8 @@
+{fun5,foo,1} : OK
+ typesig:  ((2) -> 4)
+ dataflow: ((_) -> 4)
+   typean: ((_) -> integer())
+{fun5,t,1} : OK
+ typesig:  ((2) -> 4)
+ dataflow: ((_) -> 4)
+   typean: ((_) -> integer())

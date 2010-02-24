@@ -1,0 +1,2 @@
+
+receive2:t/1 :: ((float() | {'foo',integer()}) -> {'float',float()} | {'int',integer()})

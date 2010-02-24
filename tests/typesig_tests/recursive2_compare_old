@@ -1,0 +1,24 @@
+{recursive2,collect,2} : OK
+ typesig:  ((maybe_improper_list(),_) -> [any()])
+ dataflow: ((_,_) -> [any()])
+   typean: ((_,_) -> [any()])
+{recursive2,collect_cseq,2} : OK
+ typesig:  ((_,_) -> {{'tag' | integer(),'left' | 'right'},_,_})
+ dataflow: ((_,_) -> {{'tag' | integer(),'left' | 'right'},_,_})
+   typean: ((_,_) -> {{'tag' | number(),'left' | 'right'},_,_})
+{recursive2,field_val,2} : OK
+ typesig:  ((_,_) -> {'tag' | integer(),_,_})
+ dataflow: ((_,_) -> {'tag' | integer(),_,_})
+   typean: ((_,_) -> {'tag' | number(),_,_})
+{recursive2,field_width,2} : OK
+ typesig:  ((_,_) -> {'tag' | integer(),'left' | 'right',_,_})
+ dataflow: ((_,_) -> {'tag' | integer(),'left' | 'right',_,_})
+   typean: ((_,_) -> {'tag' | number(),'left' | 'right',_,_})
+{recursive2,value,3} : OK
+ typesig:  ((_,_,integer()) -> {integer(),_,_})
+ dataflow: ((_,_,integer()) -> {integer(),_,_})
+   typean: ((_,_,number()) -> {number(),_,_})
+{recursive2,width,3} : OK
+ typesig:  (('tag' | integer(),_,_) -> {'tag' | integer(),'left' | 'right',_,_})
+ dataflow: (('tag' | integer(),_,_) -> {'tag' | integer(),'left' | 'right',_,_})
+   typean: (('tag' | number(),_,_) -> {'tag' | number(),'left' | 'right',_,_})

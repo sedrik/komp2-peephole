@@ -1,0 +1,5 @@
+
+receive3:loop/1 :: ((#state{mode::'sleep' | 'start' | 'wait',time::1000}) -> 'ok')
+receive3:start/0 :: (() -> pid())
+receive3:start/1 :: ((#state{mode::'sleep' | 'start' | 'wait',time::1000}) -> 'ok')
+receive3:wait/1 :: ((#state{mode::'sleep' | 'start' | 'wait',time::1000}) -> 'ok')

@@ -1,0 +1,16 @@
+{recursive3,t1,1} : OK
+ typesig:  ((atom()) -> no_return())
+ dataflow: ((_) -> no_return())
+   typean: ((_) -> none())
+{recursive3,t2,1} : OK
+ typesig:  ((atom()) -> no_return())
+ dataflow: ((_) -> no_return())
+   typean: ((_) -> none())
+{recursive3,t3,1} : OK
+ typesig:  ((atom()) -> no_return())
+ dataflow: ((atom()) -> no_return())
+   typean: ((atom()) -> none())
+{recursive3,t4,1} : OK
+ typesig:  ((atom()) -> no_return())
+ dataflow: ((atom()) -> no_return())
+   typean: ((atom()) -> none())

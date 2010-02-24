@@ -1,0 +1,8 @@
+
+=INFO REPORT==== 18-Mar-2008::09:37:12 ===
+Return violates the contract of higher_order01:test/0:
+  the term:
+    'gazonk'
+  is not a subtype of:
+    'ok'
+  stacktrace: [{checker,with_error_handler,4}]

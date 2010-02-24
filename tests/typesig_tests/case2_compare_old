@@ -1,0 +1,8 @@
+{case2,t,0} : OK
+ typesig:  (() -> none())
+ dataflow: (() -> none())
+   typean: (() -> 'ok')
+{case2,t,1} : differ!!!
+ typesig:  ((_) -> none())
+ dataflow: ((1) -> none())
+   typean: ((1) -> 'ok')

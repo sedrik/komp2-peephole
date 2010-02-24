@@ -1,0 +1,1 @@
+{{{emu_result,{{{'EXIT',exit_test},throw_test},false}},{native_result,{{{'EXIT',exit_test},throw_test},false}}},{{emu_compile,{ok,small}},{native_compile,{ok,small}}}}

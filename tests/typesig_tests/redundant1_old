@@ -1,0 +1,4 @@
+
+redundant1:a/1 :: ((tuple()) -> 'record' | 'tuple')
+redundant1:b/1 :: ((number()) -> 'integer' | 'number')
+redundant1:c/1 :: ((0) -> 'first_zero')

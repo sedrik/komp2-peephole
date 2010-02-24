@@ -1,0 +1,5 @@
+
+equal1:eq1/1 :: (('foo') -> 'foo')
+equal1:eq2/1 :: (([]) -> [])
+equal1:exact_eq1/1 :: (('foo') -> 'foo')
+equal1:exact_eq2/1 :: (([]) -> [])

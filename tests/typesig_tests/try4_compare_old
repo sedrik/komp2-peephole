@@ -1,0 +1,8 @@
+{try4,file_name,1} : OK
+ typesig:  ((_) -> string() | {'error','einval'})
+ dataflow: ((_) -> [non_neg_integer()] | {'error','einval'})
+   typean: ((_) -> any())
+{try4,file_name_1,1} : OK
+ typesig:  ((atom() | maybe_improper_list(atom() | maybe_improper_list(atom() | maybe_improper_list(any(),atom() | []) | 1..255,atom() | []) | 1..255,atom() | [])) -> string())
+ dataflow: ((_) -> [non_neg_integer()])
+   typean: ((_) -> [any()])

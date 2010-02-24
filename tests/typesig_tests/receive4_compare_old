@@ -1,0 +1,4 @@
+{receive4,t,0} : OK
+ typesig:  (() -> 'ok')
+ dataflow: (() -> 'ok')
+   typean: (() -> 'ok')

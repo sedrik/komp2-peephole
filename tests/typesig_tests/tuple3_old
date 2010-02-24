@@ -1,0 +1,4 @@
+
+tuple3:abstract/1 :: ((binary() | [] | tuple()) -> {'nil',0} | {'bin',0,[{_,_,_,_,_}]} | {'tuple',0,[{_,_} | {_,_,_}]})
+tuple3:abstract_list/1 :: (([binary() | [] | tuple()]) -> [{'nil',0} | {'bin',0,[any()]} | {'tuple',0,[any()]}])
+tuple3:test/0 :: (() -> {'tuple',0,[{_,_} | {_,_,_}]})

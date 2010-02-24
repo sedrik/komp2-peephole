@@ -1,0 +1,20 @@
+{is_funct2,foo,3} : OK
+ typesig:  ((number(),number(),number()) -> number())
+ dataflow: ((_,_,_) -> number())
+   typean: ((_,_,_) -> number())
+{is_funct2,t1,2} : OK
+ typesig:  ((fun(),integer()) -> {fun(),integer()})
+ dataflow: ((_,_) -> {fun(),integer()})
+   typean: ((_,_) -> {_,_})
+{is_funct2,t2,2} : OK
+ typesig:  ((fun((_,_) -> any()),2) -> {fun((_,_) -> any()),2})
+ dataflow: ((_,_) -> {fun((_,_) -> any()),2})
+   typean: ((_,_) -> {_,2})
+{is_funct2,t3,1} : OK
+ typesig:  ((3) -> {'ok',fun((number(),number(),number()) -> number())})
+ dataflow: ((_) -> {'ok',fun((_,_,_) -> number())})
+   typean: ((_) -> {'error',fun((_,_,_) -> number())} | {'ok',fun((_,_,_) -> number())})
+{is_funct2,t4,1} : OK
+ typesig:  ((2) -> {'ok',fun((number(),number()) -> number())})
+ dataflow: ((_) -> {'ok',fun((_,_) -> number())})
+   typean: ((_) -> {'error',fun((_,_) -> number())} | {'ok',fun((_,_) -> number())})

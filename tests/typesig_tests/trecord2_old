@@ -1,0 +1,2 @@
+
+trecord2:mk_icode/1 :: (('false' | 'true' | 'undefined') -> #icode{closure_arity::'undefined',info::[]})

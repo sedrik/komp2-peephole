@@ -1,0 +1,42 @@
+
+=INFO REPORT==== 30-Mar-2008::11:32:51 ===
+Call violates the contract of pp_01:test_contract_print_order/3
+  argument type(s):
+    'one'
+    'two'
+    'three'
+  are not all subtypes of:
+    'first'
+    'second'
+    'third'
+  stacktrace:
+    [{pp_01,test_contract_print_order,3},
+     {pp_01,test,0},
+     {checker,with_error_handler,4}]
+=INFO REPORT==== 30-Mar-2008::11:32:51 ===
+Call violates the contract of pp_01:more_pp_testing/3
+  argument type(s):
+    'first'
+    'second'
+    'third'
+  are not all subtypes of:
+    'one'
+    'two'
+    'three'
+  or
+    1
+    2
+    3
+  stacktrace:
+    [{pp_01,more_pp_testing,3},
+     {pp_01,test,0},
+     {checker,with_error_handler,4}]
+=INFO REPORT==== 30-Mar-2008::11:32:51 ===
+Return violates the contract of pp_01:even_more_pp_testing/0:
+  the term:
+    'ok'
+  is not a subtype of:
+    'first'
+  or
+    'second'
+  stacktrace: [{pp_01,test,0},{checker,with_error_handler,4}]

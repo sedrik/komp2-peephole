@@ -1,0 +1,16 @@
+{t_union1,a_or_b,1} : OK
+ typesig:  ((atom() | binary()) -> 'a' | 'b')
+ dataflow: ((_) -> 'a' | 'b')
+   typean: ((_) -> 'a' | 'b')
+{t_union1,atom_or_binary,1} : OK
+ typesig:  ((atom() | binary()) -> 'an_atom' | <<>>)
+ dataflow: ((_) -> 'an_atom' | <<>>)
+   typean: ((_) -> 'an_atom' | <<>>)
+{t_union1,mystery1,1} : OK
+ typesig:  ((atom() | binary()) -> 'a')
+ dataflow: ((_) -> 'a')
+   typean: ((_) -> 'a' | 'b')
+{t_union1,mystery2,1} : OK
+ typesig:  ((atom() | binary()) -> 'true')
+ dataflow: ((_) -> 'true')
+   typean: ((_) -> bool())

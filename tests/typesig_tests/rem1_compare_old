@@ -1,0 +1,12 @@
+{rem1,bar,1} : OK
+ typesig:  ((float()) -> float())
+ dataflow: ((_) -> float())
+   typean: ((_) -> any())
+{rem1,foo,1} : OK
+ typesig:  ((pos_integer()) -> 0 | 1)
+ dataflow: ((_) -> -1 | 0 | 1)
+   typean: ((_) -> -1 | 0 | 1)
+{rem1,t,1} : OK
+ typesig:  ((pos_integer()) -> 0 | 1)
+ dataflow: ((_) -> integer())
+   typean: ((_) -> integer())

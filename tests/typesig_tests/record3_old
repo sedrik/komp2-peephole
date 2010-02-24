@@ -1,0 +1,3 @@
+
+record3:expand_segs/2 :: ((tuple(),_) -> tuple())
+record3:m/1 :: ((#dict{segs::tuple()}) -> #dict{segs::tuple()})

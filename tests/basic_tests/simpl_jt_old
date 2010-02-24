@@ -1,0 +1,1 @@
+{{{emu_result,{ok,{{ok,c,e,e},{1,5,15,0},{6,'EXIT'},stacked5_}}},{native_result,{ok,{{ok,c,e,e},{1,5,15,0},{6,'EXIT'},stacked5_}}}},{{emu_compile,{ok,simpl_jt}},{native_compile,{ok,simpl_jt}}}}

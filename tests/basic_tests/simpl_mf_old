@@ -1,0 +1,1 @@
+{{{emu_result,{{{free_var1,ok},{bound_var,[seems,ok]},{free_var2,{is,also,ok}}},[ok,{double_the_fun,ok}]}},{native_result,{{{free_var1,ok},{bound_var,[seems,ok]},{free_var2,{is,also,ok}}},[ok,{double_the_fun,ok}]}}},{{emu_compile,{ok,simpl_mf}},{native_compile,{ok,simpl_mf}}}}

@@ -1,0 +1,24 @@
+{letrec1,add_one,1} : OK
+ typesig:  ((number()) -> number())
+ dataflow: ((_) -> number())
+   typean: ((_) -> number())
+{letrec1,add_one_int,1} : OK
+ typesig:  ((integer()) -> integer())
+ dataflow: ((_) -> integer())
+   typean: ((_) -> integer())
+{letrec1,t1,1} : OK
+ typesig:  (([number()]) -> [number()])
+ dataflow: ((_) -> [number()])
+   typean: ((_) -> [number()])
+{letrec1,t2,1} : OK
+ typesig:  (([any()]) -> [integer()])
+ dataflow: ((_) -> [integer()])
+   typean: ((_) -> [integer()])
+{letrec1,t3,1} : OK
+ typesig:  (([number()]) -> [number()])
+ dataflow: ((_) -> [number()])
+   typean: ((_) -> [number()])
+{letrec1,t4,1} : OK
+ typesig:  (([integer()]) -> [integer()])
+ dataflow: ((_) -> [integer()])
+   typean: ((_) -> [integer()])

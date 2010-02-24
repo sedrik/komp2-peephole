@@ -1,0 +1,164 @@
+##----------------------------------------------------------------------------
+## File:      README
+## Author(s): Kostis Sagonas
+## Purpose:   To explain the usage of the testsuite for the HiPE system
+##
+## $Id: README,v 1.4 2004/10/05 20:07:59 kostis Exp $
+##----------------------------------------------------------------------------
+
+------------
+Introduction
+------------
+ The HiPE testsuite requires a slight comprimise in the way the various
+ directories are organized. (I am not very happy about this, but I could
+ not see a simpler way to do what I wanted; if you have some idea on how
+ to improve lift its restrictions, please go on and modify things.)
+
+ Currently, everything should be placed on the same level in the directory
+ tree, as in:
+
+       ~/HiPE/otp      (*)
+       ~/HiPE/otp-x86
+       ~/HiPE/otp-64
+       ~/HiPE/tests    (*)
+       ~/HiPE/dialyzer (*) (+)
+
+ Having (*) is mandatory; (+) signifies that the name of the Dialyzero
+ directory should be named "dialyzer"; the other dirs should be named as
+ one wishes, but I suggest names like that for uniformity.
+
+
+-------------------------
+How to run the test suite
+-------------------------
+ Just type:
+
+    ./testsuite.sh FULL_PATH_NAME_OF_HIPE_DIRECTORY
+
+	(e.g. ./testsuite.sh ~/HiPE/otp)
+
+ at the prompt
+ or simply:
+
+    ./testsuite.sh
+
+ to get the full list of options that testsuite accepts.  Among other
+ things, the testsuite accepts selective running of test sets (--only
+ option), excluding certain test sets (--exclude option), and passing
+ certain arguments to the HiPE compiler (--comp_opts option).
+
+ Another assumption of "testsuite.sh" is that the HiPE system is directly
+ under the specified command-line argument and appears in:
+
+	$FULL_PATH_NAME_OF_HIPE_DIRECTORY/bin/erl
+
+ The testsuite runs all tests which are specified (if none are specified
+ the default ones appear in file "alltests.sh"), records all output in a
+ /tmp/ file (shown to the user).  When the tests are finished, the
+ testsuite checks this file for errors.  If all goes well, a "PASSED"
+ message is displayed.  If the testsuite fails, the errors or differences
+ are shown on the screen and a mail is sent to the user that initiated
+ the testsuite run.
+
+
+-----------------------------
+Information necessary to know
+-----------------------------
+ 1. The "system_tests" are NOT included in the testsuite by default.
+    There are three good reasons for this: in principle they do not need
+    to be run in native mode or in more than one platform (if one has an
+    up-to-date system with no changes), they take a bit of time to run,
+    and should not come in the way when one tests HiPE with all different
+    register allocators.
+
+    However, the "system_tests" _should_ be run before changes to the
+    lib/hipe files are committed in order to ensure the consistency and
+    kosherness of the HiPE application. PLEASE RESPECT THIS REQUIREMENT.
+    To run the system_tests issue the command:
+
+	./testsuite.sh --system ~/HiPE/otp
+
+    which however requires that you have a working dialyzer dir.  This
+    in turn is simple:
+
+	cvs checkout dialyzer	# if you do not have one already
+	cd dialyzer
+	./setup.sh ~/HiPE/otp
+	./dialyzer
+
+    (The last command is currently needed to populate the PLT with info
+     about "stdlib"; we might re-consider this)
+
+ 2. The "compiler_tests" are also not included in "alltests.sh" by default
+    and can be run as follows:
+
+	./testsuite.sh --only compiler_tests ~/HiPE/otp
+
+
+------------------------
+Information good to know
+------------------------
+ 1. For testsuite-freaks (like me), there is a "stress.sh" shell script
+    that roughly does the following:
+
+	./testsuite.sh --system
+	./ra.sh                  # runs the testsuite with all reg. allocators.
+	./testsuite.sh --only compiler_tests
+
+ 2. For debugging, there is a direct way to run specific test sets.
+    This can be done by changing to the appropriate directory (say
+    "basic_tests") and running the file "test.sh" as:
+
+	./test.sh ERL_BIN COMP_OPTIONS RTS_OPTIONS
+
+	(e.g. ./test.sh ~/HiPE/otp/bin/erl "[o2]" "")
+
+    but one should not need to resort to this option under normal
+    circumstances.
+
+
+-----------------------------------------------------
+How to add a new test program to an existing test set
+-----------------------------------------------------
+ 1. Make sure that the "new_test.erl" contains the exported functions
+    test/0 and compile/1, where test/0 executes the test and returns 
+    a (preferably sufficiently complicated) value indicating the
+    result of the test, and where function compile/1 compiles relevant
+    functions in the test to native code with the flags given as an
+    argument.
+ 2. Manually run the new_test test to produce CORRECT results and save 
+    these in a file named "new_test_old".
+ 3. Add the name of the new test to the entry:
+	testfiles="...."
+    in file "test.sh" of the existing test set.
+ 4. cvs add new_test.erl new_test_old
+	(unless you have a very good reason to add
+	 the .beam or .hipe.* files, do not add/commit these)
+ 5. cvs commit new_test.erl new_test_old test.sh
+
+
+------------------------------------------
+How to add a new test set to the testsuite
+------------------------------------------
+  Suppose you want to add a new test set named "myhairy_tests"
+  in the testsuite containing files:
+
+	"hairy1.erl", "hairy2.erl", and "very_hairy.erl".
+
+  and that these files already satisfy the exported functions requirement
+  for functions test/0 and compile/1 stated above (if not, this is step 0).
+
+  All you have to do is the following:
+
+   1. Create a dir "myhairy_tests" directly under the "tests" dir (here)
+   2. cp hairy1.erl hairy2.erl very_hairy.erl myhairy_tests/
+   3. Copy a test.sh file from an already existing test set (e.g. basic_tests)
+      and modify the "testfiles" line to look e.g. like:
+	testfiles="hairy?.erl very_hairy.erl"
+   4. Manually run each of these tests (or by running test.sh) to produce
+      CORRECT results and save these results in files named:
+	hairy1_old hairy2_old very_hairy_old
+   5. Add and commit the "myhairy_tests" dir in the testsuite
+   6. Add the "myhairy_tests" test set in the "alltest.sh" default_testlist
+      and cvs commit the changed "alltest.sh" file.
+

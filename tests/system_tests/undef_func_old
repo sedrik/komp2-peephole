@@ -1,0 +1,1 @@
+{{{emu_result,{no_undefined_functions,no_unused_local_functions,no_unused_exported_functions}},{native_result,{no_undefined_functions,no_unused_local_functions,no_unused_exported_functions}}},{{emu_compile,{ok,undef_func}},{native_compile,ok}}}
