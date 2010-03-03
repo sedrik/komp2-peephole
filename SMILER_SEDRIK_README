@@ -7,7 +7,10 @@ TODO:
   Be happy aka profit
 
 - Leta fram och speca vilka optimeringar som görs för x86 i hipe just nu
+  - Modifiera hipe källkoden så att vi gör de nuvarande x86 på x86_64
 - Leta fram nya optimeringar
+  - förstå sig på gcc rtl och sno ur deras source
+    - Vi borde hitta någon simpel peephole optimering och se om vi förstår den.
   - Finns några i smlnj som är lätta att plocka ut
   - llvm?
 
