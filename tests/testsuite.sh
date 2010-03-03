@@ -228,7 +228,7 @@ if test ! -x "$HIPE_RTS"; then
     echo "Can't execute $HIPE_RTS" >$MSG_FILE
     echo "Aborted testsuite on $HOSTNAME..." >> $MSG_FILE
     if test -z "$quiet"; then
-	mail -s "HiPE testsuite aborted" $USER < $MSG_FILE
+	#mail -s "HiPE testsuite aborted" $USER < $MSG_FILE
     fi
     rm -f $MSG_FILE
     exit
@@ -374,7 +374,7 @@ if test -s $RES_FILE; then
 	    echo "Details:" >> $MSG_FILE
 	    echo >> $MSG_FILE
 	    cat $RES_FILE >> $MSG_FILE
-	    mail -s "HiPE testsuite failed" $USER < $MSG_FILE
+	    #mail -s "HiPE testsuite failed" $USER < $MSG_FILE
 	    rm -f $MSG_FILE
 	    cp $RES_FILE $NEW_RES
         else
