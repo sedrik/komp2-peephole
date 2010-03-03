@@ -227,9 +227,9 @@ if test ! -x "$HIPE_RTS"; then
     echo "aborting..."
     echo "Can't execute $HIPE_RTS" >$MSG_FILE
     echo "Aborted testsuite on $HOSTNAME..." >> $MSG_FILE
-    if test -z "$quiet"; then
+    #if test -z "$quiet"; then
 	#mail -s "HiPE testsuite aborted" $USER < $MSG_FILE
-    fi
+    #fi
     rm -f $MSG_FILE
     exit
 fi
