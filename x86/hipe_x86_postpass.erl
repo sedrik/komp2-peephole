@@ -24,7 +24,9 @@
 %%% Created : 5 Aug 2003 by Christoffer Vikström <chvi3471@student.uu.se>
 %%%----------------------------------------------------------------------
 
--ifndef(HIPE_X86_POSTPASS).
+-ifdef(HIPE_AMD64).
+-define(HIPE_X86_POSTPASS, hipe_amd64_postpass).
+-else.
 -define(HIPE_X86_POSTPASS, hipe_x86_postpass).
 -endif.
 

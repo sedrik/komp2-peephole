@@ -55,6 +55,7 @@ MODULES=hipe_amd64_assemble \
 	hipe_amd64_ra_ls \
 	hipe_amd64_ra_naive \
 	hipe_amd64_ra_postconditions \
+	hipe_amd64_postpass \
 	hipe_amd64_ra_sse2_postconditions \
 	hipe_amd64_ra_x87_ls \
 	hipe_amd64_registers \

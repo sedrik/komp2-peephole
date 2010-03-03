@@ -26,6 +26,7 @@
 -define(HIPE_X86_FRAME, hipe_amd64_frame).
 -define(HIPE_X86_PP, hipe_amd64_pp).
 -define(X86TAG, amd64). % XXX: kill this crap
+-define(HIPE_X86_POSTPASS, hipe_amd64_postpass).
 -define(X86STR, "amd64").
 -define(HIPE_X86_SPILL_RESTORE, hipe_amd64_spill_restore).
 -else.
@@ -36,6 +37,7 @@
 -define(HIPE_X86_FRAME, hipe_x86_frame).
 -define(HIPE_X86_PP, hipe_x86_pp).
 -define(X86TAG, x86). % XXX: kill this crap
+-define(HIPE_X86_POSTPASS, hipe_x86_postpass).
 -define(X86STR, "x86").
 -define(HIPE_X86_SPILL_RESTORE, hipe_x86_spill_restore).
 -endif.
@@ -64,7 +66,7 @@
 			    ?X86STR" register allocation", Options),
   Framed     = ?option_time(?HIPE_X86_FRAME:frame(Allocated, Options), 
 			    ?X86STR" frame", Options),
-  Finalised  = ?option_time(hipe_x86_postpass:postpass(Framed, Options),
+  Finalised  = ?option_time(?HIPE_X86_POSTPASS:postpass(Framed, Options),
 			    ?X86STR" finalise", Options),
   ?HIPE_X86_PP:optional_pp(Finalised, MFA, Options),
   {native, ?X86TAG, {unprofiled, Finalised}}.

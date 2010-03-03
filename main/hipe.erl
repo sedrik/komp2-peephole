@@ -1192,6 +1192,8 @@ option_text(load) ->
   "Automatically load the produced native code into memory";
 option_text(peephole) ->
   "Enables peephole optimizations";
+option_text(peephole_amd64) ->
+  "Enables peephole optimizations for the amd64 platform (smiler sedrik debugging)";
 option_text(pmatch) ->
   "Enables pattern matching compilation when compiling from Core; " ++
   "has no effect when compiling from BEAM bytecode";
@@ -1341,6 +1343,7 @@ opt_keys() ->
      load,
      measure_regalloc,
      peephole,
+     peephole_amd64,
      pmatch,
      pp_asm,
      pp_beam,
@@ -1462,6 +1465,7 @@ opt_negations() ->
    {no_inline_fp, inline_fp},
    {no_load, load},
    {no_peephole, peephole},
+   {no_peephole_amd64, peephole_amd64},
    {no_pmatch, pmatch},
    {no_pp_beam, pp_beam},
    {no_pp_icode, pp_icode},
