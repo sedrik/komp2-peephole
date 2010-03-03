@@ -8,3 +8,6 @@
 *~
 *.swp
 *.o
+ebin/hipe.app
+ebin/hipe.appup
+main/hipe.hrl
