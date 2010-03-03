@@ -1,8 +1,14 @@
 http://gcc.gnu.org/onlinedocs/gccint/
 
-
 TODO:
   understand stuff
   do the things
   ???
   Be happy aka profit
+
+- Leta fram och speca vilka optimeringar som görs för x86 i hipe just nu
+- Leta fram nya optimeringar
+  - Finns några i smlnj som är lätta att plocka ut
+  - llvm?
+
+
