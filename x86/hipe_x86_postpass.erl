@@ -199,8 +199,11 @@ peep([B = #alu{aluop=Op,src=#x86_imm{value=Val},dst=Dst}|Insns], Res, Lst) ->
 %% Standard list recursion clause
 %% ------------------------------
 peep([I | Insns], Res, Lst) ->
-     peep(Insns, [I|Res], Lst);
-peep([], Res, _Lst) ->
+  peep(Insns, [I|Res], Lst);
+peep([], Res, []) ->
+  lists:reverse(Res);
+peep([], Res, Lst) ->
+  io:format("peep list: ~p~n", [lists:usort(Lst)]),
     lists:reverse(Res). 
 
 %% Simple goto elimination
