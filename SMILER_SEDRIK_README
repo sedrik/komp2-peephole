@@ -5,6 +5,7 @@ TODO:
   do the things
   ???
   Be happy aka profit
+  http://www.amd.com/us-en/assets/content_type/white_papers_and_tech_docs/25112.PDF page 76
 
 - Lägg till flagga i hipe för att göra x86_84 peephole-optimeringar
 - Leta fram och speca vilka optimeringar som görs för x86 i hipe just nu
