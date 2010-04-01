@@ -6,6 +6,14 @@ TODO:
   ???
   Be happy aka profit
   http://www.amd.com/us-en/assets/content_type/white_papers_and_tech_docs/25112.PDF page 76
+  http://www.agner.org/optimize/optimizing_assembly.pdf
+  http://www.agner.org/optimize/microarchitecture.pdf
+  http://www.agner.org/optimize/
+  http://portal.acm.org/citation.cfm?id=357098
+  http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.39.8203
+  http://www.nynaeve.net/?p=64
+  http://www.realworldtech.com/page.cfm?ArticleID=RWT110302111309
+  http://stackoverflow.com/questions/1812835/reduce-assembly-number-of-instructions
 
 - Lägg till flagga i hipe för att göra x86_84 peephole-optimeringar
 - Leta fram och speca vilka optimeringar som görs för x86 i hipe just nu
